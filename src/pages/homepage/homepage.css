@@ -26,3 +26,33 @@
   flex-direction: row;
   margin-top: 40px;
 }
+
+.ourFeaturedAgents {
+  width: 100%;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.ourFeaturedAgents > h1 {
+  font-family: Istok Web;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  color: #000000;
+}
+
+.ourFeaturedAgents > p {
+  font-family: Istok Web;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #000000;
+}
+
+.featuredAgent {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 40px;
+}
