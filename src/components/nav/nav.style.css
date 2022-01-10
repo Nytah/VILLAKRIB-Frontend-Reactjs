@@ -25,12 +25,82 @@
   list-style: none;
   display: flex;
 }
+
 #nav .link-div ul a {
+  /* border: solid; */
   text-decoration: none;
   color: #fff;
-  padding: 10px; 
+  padding: 10px;
+  /* margin: auto 0; */
 }
 #nav .link-div ul a:hover {
   text-decoration: underline;
   color: #ddd;
+}
+
+.btn-close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+.modal-content {
+  /* background-color: rgb(154, 152, 255) !important; */
+}
+.nav-item {
+  width: 50%;
+}
+.nav-item .active {
+  background-color: blue;
+  color: #ddd;
+}
+.modal-top-button {
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 20px;
+  /* background-color: red; */
+  width: 100%;
+  /* border: solid; */
+  display: block;
+}
+ul.nav {
+  /* border: solid red; */
+  margin-top: 20px;
+}
+.form-div {
+  /* border: solid; */
+}
+.form-div .icon-div {
+  /* border: solid; */
+  font-size: 50px;
+  color: blue;
+}
+.form-div .input-div {
+  margin-top: 10px;
+}
+.form-div .input-div span {
+  /* border: solid; */
+  display: block;
+  font-weight: 900;
+  margin: 3px;
+}
+.form-div .input-div input {
+  /* border: solid; */
+  width: 100%;
+  height: 50px;
+  background-color: rgba(180, 180, 255, 0.611);
+  color: rgba(0, 0, 28, 0.953);
+  border: none;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+.form-div .input-div input[type='checkbox'] {
+  width: auto;
+  height: auto;
+}
+.form-div .input-div input[type='button'] {
+  background-color: rgba(31, 31, 248, 0.611);
+  color: rgrgb(0, 0, 36);
+  /* }rgba(98, 98, 255, 0.611)rgba(98, 98, 255, 0.871) */
 }
