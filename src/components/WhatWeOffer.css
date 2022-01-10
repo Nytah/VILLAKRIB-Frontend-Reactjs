@@ -1,0 +1,360 @@
+.container {
+  background: white;
+}
+
+.whatWeOffer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.whatWeOffer-header {
+  font-family: Istok Web;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 58px;
+  color: #000000;
+  margin-bottom: 0;
+}
+
+.whatWeOffer-para {
+  font-family: Istok Web;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 29px;
+  text-align: center;
+  color: #000000;
+  justify-content: center;
+  text-align: center;
+  text-justify: inter-word;
+  width: 50%;
+  margin-top: 0;
+}
+
+.find {
+  display: flex;
+  margin: 50px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.findYourSpec {
+  flex: 1;
+}
+
+.header {
+  font-family: Istok Web;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 58px;
+  color: #000000;
+  margin-bottom: 0;
+}
+
+.para {
+  font-family: Istok Web;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+  justify-content: center;
+  text-align: justify;
+  text-justify: inter-word;
+  padding: 10px 0;
+  margin-top: 0;
+}
+
+.findYourSpec > ul {
+  margin-top: 20px;
+  margin-left: 50px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.findYourSpec > ul > li {
+  width: 50%;
+  margin-bottom: 15px;
+  font-family: Istok Web;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 29px;
+}
+
+.btn {
+  justify-content: center;
+  margin-left: 150px;
+}
+
+.btn > button {
+  border: none;
+  background: #0b4095;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 10px;
+  justify-content: center;
+  font-family: Istok Web;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 57.58px;
+  padding: 0px 20px;
+}
+
+.image {
+  flex: 2;
+  width: 80%;
+  height: 50vh;
+  object-fit: contain;
+}
+
+.transact {
+  display: flex;
+  margin-right: 100px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.transactSeemlessly {
+  flex: 1;
+  margin-right: 40px;
+}
+
+.headerTwo {
+  font-family: Istok Web;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 58px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.paraTwo {
+  font-family: Istok Web;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+  justify-content: center;
+  text-align: justify;
+  text-justify: inter-word;
+  padding: 0 50px;
+  margin-top: 0px;
+}
+
+.btnTwo {
+  justify-content: center;
+  margin-left: 150px;
+}
+
+.btnTwo > button {
+  border: none;
+  background: #0b4095;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 10px;
+  justify-content: center;
+  font-family: Istok Web;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 57.58px;
+  padding: 0px 20px;
+}
+
+.imageTwo {
+  flex: 1;
+  width: 80%;
+  height: 50vh;
+  object-fit: contain;
+}
+
+.advisory {
+  display: flex;
+  margin: 50px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.advisoryAgent {
+  flex: 1;
+}
+
+.paraThree {
+  font-family: Istok Web;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 33px;
+  text-align: center;
+  color: #000000;
+  justify-content: center;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-bottom: 70px;
+  margin-top: 0px;
+}
+
+.btnThree {
+  justify-content: center;
+  margin-left: 150px;
+}
+
+.btnThree > button {
+  border: none;
+  background: #0b4095;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 10px;
+  justify-content: center;
+  font-family: Istok Web;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 57.58px;
+  padding: 0px 20px;
+}
+
+@media screen and (max-width: 1050px) {
+  .btn {
+    justify-content: center;
+    margin-left: 80px;
+  }
+
+  .findYourSpec > ul {
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .findYourSpec > ul > li {
+    width: 50%;
+    margin-bottom: 15px;
+    font-family: Istok Web;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14.5px;
+    line-height: 29px;
+  }
+
+  .btnThree {
+    justify-content: center;
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .find,
+  .transact,
+  .advisory {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .findYourSpec,
+  .transactSeemlessly,
+  .advisoryAgent {
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+
+  .header,
+  .headerTwo {
+    font-family: Istok Web;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 58px;
+    color: #000000;
+    text-align: center;
+  }
+
+  .headerTwo {
+    margin-left: 50px;
+  }
+
+  .para,
+  .paraTwo,
+  .paraThree {
+    font-size: 16px;
+    line-height: 25px;
+    text-align: justify;
+    color: #000000;
+    justify-content: center;
+    text-justify: inter-word;
+    padding: 10px 0;
+    margin-top: 0;
+    width: 100%;
+    align-items: center;
+  }
+
+  .image,
+  .imageTwo {
+    width: 60%;
+    object-fit: contain;
+    margin-top: 50px;
+  }
+
+  .paraTwo {
+    margin-left: 50px;
+  }
+
+  .btn,
+  .btnThree {
+    margin-left: 0;
+  }
+
+  .btnTwo {
+    margin-left: 80px;
+  }
+}
+
+@media screen and (max-width: 455px) {
+  .imageTwo {
+    margin-left: 80px;
+  }
+
+  .btn > button,
+  .btnTwo > button,
+  .btnThree > button {
+    font-size: small;
+  }
+
+  .header,
+  .headerTwo {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .para,
+  .paraTwo,
+  .paraThree {
+    font-size: 12px;
+  }
+
+  .findYourSpec > ul > li {
+    font-size: 10px;
+  }
+}
