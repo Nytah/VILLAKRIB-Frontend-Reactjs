@@ -1,0 +1,36 @@
+#nav {
+  background-color: blue;
+  display: inline-flex;
+  width: 100%;
+}
+#nav .logo-div {
+  width: 70px;
+  height: 70px;
+  /* border: solid; */
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto 10px;
+  margin-right: auto;
+}
+#nav .logo-div img {
+  width: 70px;
+  height: 70px;
+}
+#nav .link-div {
+  margin: auto 10px;
+}
+#nav .link-div ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+#nav .link-div ul a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px; 
+}
+#nav .link-div ul a:hover {
+  text-decoration: underline;
+  color: #ddd;
+}
