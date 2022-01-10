@@ -13,16 +13,24 @@ const NavComponent = () => {
         <div className="link-div">
           <ul>
             <li>
-              <Link to="">Hi</Link>{" "}
+              <Link to="">Home</Link>{" "}
             </li>
             <li>
-              <Link to="">Hi</Link>{" "}
+              <Link to="">Properties</Link>{" "}
             </li>
             <li>
-              <Link to="">Hi</Link>{" "}
+              <Link to="">Aid</Link>{" "}
             </li>
             <li>
-              <Link to="">Hi</Link>{" "}
+              <Link to="">Guide</Link>{" "}
+            </li>
+            <li>
+              <Link to="">About Us</Link>{" "}
+            </li>
+            <li>
+              <Link to="">
+                Login/Resgister <i class="bi bi-person-circle"></i>
+              </Link>{" "}
             </li>
           </ul>
         </div>
