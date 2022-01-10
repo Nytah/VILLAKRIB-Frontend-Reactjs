@@ -1,3 +1,5 @@
+import React from 'react';
+import WhatWeOffer from './components/WhatWeOffer';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomePage from './pages/homepage/homepage';
