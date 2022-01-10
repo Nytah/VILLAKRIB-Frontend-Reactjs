@@ -74,18 +74,84 @@ const NavComponent = () => {
                       <div className="input-div">
                         <input type="button" value="Submit" />
                       </div>
+                      <div className="or-diver d-flex justify-content-around mt-3">
+                        <hr />
+                        <span className="my-auto ">OR</span>
+                        <hr />
+                      </div>
+                      <div className="input-div login-social-icon">
+                        <div className="btn">
+                          <i class="bi bi-google"></i>
+                        </div>
+                        <div className="btn">
+                          <i class="bi bi-facebook"></i>
+                        </div>
+                      </div>
                     </form>
                   </div>
                 </div>
                 {/* Regester Tab */}
                 <div class="tab-pane container fade" id="registar">
-                  Regester
+                  {/* Regester form */}
+                  <div className="form-div">
+                    <div className="icon-div text-center">
+                      <i class="bi bi-person-circle"></i>
+                    </div>
+
+                    <div className="input-div login-social-icon">
+                      <div className="btn">
+                        <i class="bi bi-google"></i>
+                      </div>
+                      <div className="btn">
+                        <i class="bi bi-facebook"></i>
+                      </div>
+                    </div>
+                    <div className="or-diver d-flex justify-content-around mt-3">
+                      <hr />
+                      <span className="my-auto ">OR</span>
+                      <hr />
+                    </div>
+                    <form action="">
+                      <div className="input-div">
+                        <span>Fullname:</span>
+                        <input type="text" placeholder="you@email.com" />
+                      </div>
+                      <div className="input-div">
+                        <span>Email:</span>
+                        <input type="email" placeholder="you@email.com" />
+                      </div>
+                      <div className="input-div">
+                        <span>Number:</span>
+                        <input type="number" placeholder="000-000-000" />
+                      </div>
+                      <div className="input-div">
+                        <span>Password:</span>
+                        <input type="password" placeholder="**********" />
+                      </div>
+                      <div className="input-div">
+                        <span>Confirm password:</span>
+                        <input type="password" placeholder="**********" />
+                      </div>
+                      <div className="input-div">
+                        <div className="d-flex justify-content-between m-3">
+                          <div>
+                            <input type="checkbox" id="rememberMe" />{" "}
+                            <label htmlFor="rememberMe">Remember Me</label>
+                          </div>
+                          <Link to="">Forgot Password</Link>
+                        </div>
+                      </div>
+                      <div className="input-div">
+                        <input type="button" value="Submit" />
+                      </div>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* <!-- Modal footer --> */}
-            <div class="modal-footer">
+            {/* <div class="modal-footer">
               <button
                 type="button"
                 class="btn btn-danger"
@@ -93,7 +159,7 @@ const NavComponent = () => {
               >
                 Close
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

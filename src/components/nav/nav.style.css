@@ -101,6 +101,27 @@ ul.nav {
 }
 .form-div .input-div input[type='button'] {
   background-color: rgba(31, 31, 248, 0.611);
-  color: rgrgb(0, 0, 36);
+  color: rgb(0, 0, 36);
   /* }rgba(98, 98, 255, 0.611)rgba(98, 98, 255, 0.871) */
+}
+.login-social-icon {
+  /* border: solid; */
+  display: flex;
+  justify-content: space-around;
+}
+.login-social-icon .btn {
+  border: solid;
+  width: 45%;
+  font-size: 20px;
+  color: rgba(31, 31, 248, 0.611);
+}
+.login-social-icon .btn:hover {
+  color: rgba(1, 1, 136, 0.741);
+}
+.or-diver span {
+  font-weight: 900;
+}
+.or-diver hr {
+  /* border: solid; */
+  width: 40%;
 }
