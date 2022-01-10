@@ -35,9 +35,9 @@ const HomePage = () => {
       </div>
 
       <div className="featuredAgent">
-        <FeaturedAgent image={Agent1} location="" name="John Doe"/>
-        <FeaturedAgent image={Agent2} location="" name="John Doe"/>
-        <FeaturedAgent image={Agent3} location="" name="John Doe"/>
+        <FeaturedAgent image={Agent1} location="Gwagwalada, Abuja" name="John Doe"/>
+        <FeaturedAgent image={Agent2} location="Gwagwalada, Abuja" name="John Doe"/>
+        <FeaturedAgent image={Agent3} location="Gwagwalada, Abuja" name="John Doe"/>
       </div>
    </>);
 };
