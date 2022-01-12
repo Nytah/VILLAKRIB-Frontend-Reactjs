@@ -1,6 +1,8 @@
 .propertyCategories {
   width: 100%;
   text-align: center;
+  margin: 35px;
+  margin-right: 200px;
 }
 
 .propertyCategories > h1 {
@@ -17,6 +19,7 @@
   font-weight: normal;
   font-size: 16px;
   color: #000000;
+  margin-right: 25px;
 }
 
 .propCategory {
@@ -24,5 +27,39 @@
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
+  margin: 35px;
+  margin-top: 40px;
+}
+
+.ourFeaturedAgents {
+  width: 100%;
+  text-align: center;
+  margin: 35px;
+  margin-right: 200px;
+}
+
+.ourFeaturedAgents > h1 {
+  font-family: Istok Web;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  color: #000000;
+}
+
+.ourFeaturedAgents > p {
+  font-family: Istok Web;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #000000;
+  margin-right: 50px;
+}
+
+.featuredAgent {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 35px;
   margin-top: 40px;
 }
