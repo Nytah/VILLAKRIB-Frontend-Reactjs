@@ -8,15 +8,19 @@ const NavComponent = () => {
     <>
       {/* <!-- The Modal --> */}
 
-      <div class="modal fade" id="loginModal">
+      <div
+        class="modal fade"
+        style={{ zIndex: " 0 !important" }}
+        id="loginModal"
+      >
         <div class="modal-dialog">
           <div class="modal-content">
             {/* <!-- Modal body --> */}
-            <div class="modal-body">
+            <div class="modal-body py-5">
               {/* <!-- Nav pills --> */}
               <ul class="nav nav-pills">
                 <li class="nav-item">
-                  {/* <!-- Button to Open the Modal --> */}
+                  {/* <!-- Button to change through pages in moduel the Modal --> */}
                   <a
                     class=" modal-top-button active"
                     data-bs-toggle="pill"
