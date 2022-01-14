@@ -8,6 +8,9 @@ import houseImage from "../../assets/images/2.jpg";
 import image1 from "../../assets/images/image 4.png";
 // import image2 from "../../assets/images/image 7.png";
 // import image4 from "../../assets/images/image-.png";
+import playstore from "../../assets/images/playstore.jpg";
+import appstore from "../../assets/images/appstore.jpg";
+import mobileAppImage from "../../assets/images/villakrib app phone.jpg";
 import ReactCarousel, {
   PropertyListings,
 } from "../../components/carousel/carousel.component";
@@ -131,6 +134,21 @@ const HomePage = () => {
           </div>
           <div className="col-4 d-flex">
             <div className="btn btn-primary my-auto">Contact Us</div>
+          </div>
+        </div>
+      </section>
+      <section className="download-app-section">
+        <div className="d-flex">
+          <div className="download-text">
+            <h1>Download our App</h1>
+            <p>App is free</p>
+            <div className="store-icons d-flex">
+              <img src={appstore} alt="" />
+              <img src={playstore} alt="" />
+            </div>
+          </div>
+          <div className="download-app-image">
+            <img src={mobileAppImage} alt="" />
           </div>
         </div>
       </section>
