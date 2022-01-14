@@ -10,36 +10,58 @@ import Agent1 from "../../assets/images/Agent1.png";
 import Agent2 from "../../assets/images/Agent2.png";
 import Agent3 from "../../assets/images/Agent3.png";
 import FeaturedAgent from "../../components/featuredAgent/featuredAgent.component";
-
-
+import FooterComponent from "../../components/footer/footer.component";
 
 const HomePage = () => {
   return (
-   <>
-    <WhatWeOffer />
-    <div className='propertyCategories'>
+    <>
+      <WhatWeOffer />
+      <div className="propertyCategories">
         <h1>Property Categories</h1>
         <p>check out property types that we can offer you</p>
       </div>
-      
+
       <div className="propCategory">
-          <PropCategory image={image1} text="Land"/>
-          <PropCategory image={image2} text="House & Villa"/>
-          <PropCategory image={image3} text="Offices"/>
-          <PropCategory image={image4} text="Furnished Appartments"/>
+        <PropCategory image={image1} text="Land" />
+        <PropCategory image={image2} text="House & Villa" />
+        <PropCategory image={image3} text="Offices" />
+        <PropCategory image={image4} text="Furnished Appartments" />
+      </div>
+
+      <div className="explorePropertyListings">
+        <h1>Explore Property Listings</h1>
+        <p> Explore property listings through our digital image library</p>
       </div>
 
       <div className="ourFeaturedAgents">
         <h1>Our Featured Agents</h1>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Ut enim ad minim veniam.</p>
+        <p>
+          {" "}
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Ut
+          enim ad minim veniam.
+        </p>
       </div>
 
       <div className="featuredAgent">
-        <FeaturedAgent image={Agent1} location="Gwagwalada, Abuja" name="John Doe"/>
-        <FeaturedAgent image={Agent2} location="Gwagwalada, Abuja" name="John Doe"/>
-        <FeaturedAgent image={Agent3} location="Gwagwalada, Abuja" name="John Doe"/>
+        <FeaturedAgent
+          image={Agent1}
+          location="Gwagwalada, Abuja"
+          name="John Doe"
+        />
+        <FeaturedAgent
+          image={Agent2}
+          location="Gwagwalada, Abuja"
+          name="John Doe"
+        />
+        <FeaturedAgent
+          image={Agent3}
+          location="Gwagwalada, Abuja"
+          name="John Doe"
+        />
       </div>
-   </>);
+      <FooterComponent />
+    </>
+  );
 };
 
 export default HomePage;
