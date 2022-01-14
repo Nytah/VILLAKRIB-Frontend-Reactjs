@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./homepage.css";
-import PropCategory from "../../components/PropCategory";
+// import PropCategory from "../../components/PropCategory";
 // import WhatWeOffer from "../../components/WhatWeOffer";
 import houseImage from "../../assets/images/2.jpg";
-import image3 from "../../assets/images/image 6.png";
+// import image3 from "../../assets/images/image 6.png";
 import image1 from "../../assets/images/image 4.png";
-import image2 from "../../assets/images/image 7.png";
-import image4 from "../../assets/images/image-.png";
+// import image2 from "../../assets/images/image 7.png";
+// import image4 from "../../assets/images/image-.png";
 import ReactCarousel, {
   PropertyListings,
 } from "../../components/carousel/carousel.component";
@@ -34,7 +34,7 @@ const HomePage = () => {
           </div>
           <div className="col-md-6  d-flex">
             <div className="my-auto">
-              <hr />
+              <hr className="short-line" />
               <h1>Let us walk you home.</h1>
               Exquisit property listing for buyers, large Clientele for sellers,
               location database and price ranging for renting. Availability of
@@ -83,12 +83,8 @@ const HomePage = () => {
       //   //{" "}
       </div>*/}
       <div className="ourFeaturedAgents">
+        <hr className="short-line" />
         <h1>Our Featured Agents</h1>
-        <p>
-          {" "}
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Ut
-          enim ad minim veniam.
-        </p>
       </div>
       <div className="featuredAgent">
         <FeaturedAgent
@@ -107,6 +103,37 @@ const HomePage = () => {
           name="John Doe"
         />
       </div>
+
+      <div className="main-blog-div">
+        <section className="blog-section">
+          <div className="image-behaind-text-div">
+            <img src={houseImage} alt="" />
+            <div className="text-over-image">
+              <div className="header">Lorem ipsum dolor sit amet</div>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae
+              reprehenderit dignissimos velit maxime iste adipisci non assumenda
+              autem, optio quis rerum dolorum sint dolor excepturi quaerat
+              obcaecati voluptatibus culpa in.
+              <p>
+                <button className="btn btn-primary mt-3">Read Blog...</button>
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section className="question-section">
+        <div className="row p-3">
+          {" "}
+          <div className="col-md-8">
+            <h1>Do you Have A Question?</h1>
+            We are always avalilabie to answer
+          </div>
+          <div className="col-4 d-flex">
+            <div className="btn btn-primary my-auto">Contact Us</div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
