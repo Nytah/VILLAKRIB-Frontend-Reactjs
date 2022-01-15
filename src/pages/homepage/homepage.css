@@ -43,8 +43,8 @@
 
 .short-line {
   width: 200px;
-  background-color: blue;
-  border: 2px solid blue;
+  background-color: var(--main-blue);
+  border: 2px solid var(--main-blue);
 }
 .ourFeaturedAgents {
   width: 100%;
@@ -53,13 +53,13 @@
   margin-right: 200px;
 }
 
-.ourFeaturedAgents > h1 {
+/* .ourFeaturedAgents > h1 {
   font-family: Istok Web;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
   color: #0d00ff;
-}
+} */
 
 .ourFeaturedAgents > p {
   font-family: Istok Web;
@@ -100,6 +100,16 @@
   width: 1000px;
   height: 550px;
 }
+
+.explor-section {
+  background-color: var(--fade-blue);
+  padding-top: 80px;
+}
+.PropertyListingsDiv {
+  background-color: var(--main-blue);
+  border-top-left-radius: 100px;
+  padding: 15px 0 0 30px;
+}
 .blog-section {
   display: flex;
   justify-content: center;
@@ -119,7 +129,7 @@
 .main-blog-div {
   border-top-left-radius: 100px;
   width: 100%;
-  background-color: blue;
+  background: var(--linear-gradient);
 }
 .image-behaind-text-div img {
   width: 100%;
@@ -132,12 +142,12 @@
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 1px 1px 15px royalblue;
+  box-shadow: 1px 1px 15px var(--fade-blue);
   text-align: right;
 }
 .download-app-section {
   padding: 50px;
-  background-color: blue;
+  background-color: var(--main-blue);
   color: white;
 }
 .download-text {
@@ -168,4 +178,50 @@
 .download-app-image img {
   /* border: solid; */
   width: 500px;
+}
+.hr {
+  width: 30%;
+  color: var(--text-blue);
+  font-weight: 900;
+  height: 5px !important;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  opacity: 0.9;
+}
+.header-text {
+  color: var(--text-blue);
+  /* letter-spacing: 5px; */
+  line-height: 40px;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: Montserrat;
+}
+.fancy-button {
+  width: 30%;
+  min-width: 150px;
+  margin-top: 20px;
+  border-radius: 0;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  background-color: var(--main-blue);
+  border: none;
+}
+.fancy-button.r {
+  border-top-right-radius: 30px;
+}
+.fancy-button.l {
+  border-top-left-radius: 30px;
+}
+.question-section {
+  height: 300px;
+}
+.question-section .fancy-button {
+  border-radius: 50px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  width: 300px;
+  font-size: 30px;
+  height: 90px;
 }

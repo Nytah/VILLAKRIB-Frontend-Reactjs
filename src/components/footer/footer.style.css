@@ -1,5 +1,5 @@
 .footerContainer {
-  background-color: rgb(25, 25, 189);
+  background-color: var(--main-blue);
   width: 100%;
   margin: 0 !important;
   color: white;
@@ -17,13 +17,13 @@
 .footerLogoText {
   font-size: 20px;
 }
-.footerLogoImg > input[type="button"] {
+.footerLogoImg > input[type='button'] {
   background-color: #e51414;
   color: white;
   margin-left: 10px;
 }
 
-.footerLogoImg > input[type="email"] {
+.footerLogoImg > input[type='email'] {
   width: 75%;
 }
 
@@ -70,7 +70,7 @@ ul {
   width: 100%;
 }
 
-.inputContactEmail input[type="button"] {
+.inputContactEmail input[type='button'] {
   color: white;
   background-color: #e51414;
 }

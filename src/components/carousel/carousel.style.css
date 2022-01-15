@@ -69,14 +69,14 @@
 .text-over-hero-slider .header {
   font-size: 50px;
   margin-top: 30px;
-  color: wheat;
+  color: var(--text-blue);
   font-weight: 900;
   /* line-height: 2px; */
 }
 .text-over-hero-slider .main-text {
   font-size: 30px;
   margin-top: 20px;
-  color: wheat;
+  color: white;
   font-weight: 400;
   /* line-height: 2px; */
 }
@@ -108,14 +108,15 @@
 }
 .property-listing-slide {
   position: relative;
-  height: 200px;
+  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   /* border: solid; */
   padding-top: 25px;
-  background-color: rgb(0, 8, 255);
+  /* background-color: var(--main-blue); */
+  color: white;
 }
 .property-listing-slide .slide-icons {
   top: 0px;
@@ -128,8 +129,8 @@
 }
 .property-listing-slide-image {
   border: solid;
-  width: 130px;
-  height: 100px;
+  width: 150px;
+  height: 120px;
   margin: 10px;
   border-radius: 20px;
   /* display: none; */
@@ -138,5 +139,7 @@
 }
 .property-slide.activProperty {
   /* width: 350px; */
-  background-color: rgb(63, 69, 255);
+  background-color: #ddd;
+  color: var(--text-blue);
+  font-weight: 500;
 }
