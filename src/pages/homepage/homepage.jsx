@@ -16,9 +16,10 @@ import Agent2 from "../../assets/images/Agent2.png";
 import Agent3 from "../../assets/images/Agent3.png";
 import FeaturedAgent from "../../components/featuredAgent/featuredAgent.component";
 import NavComponent from "../../components/nav/nav.component";
-import playstore from "../../assets/images/playstore.jpg";
-import appstore from "../../assets/images/appstore.jpg";
-import mobileAppImage from "../../assets/images/villakrib app phone.jpg";
+import playstore from "../../assets/images/playstore.png";
+import appstore from "../../assets/images/appstore.png";
+import mobileAppImage from "../../assets/images/villakrib_app_phone.png";
+import FooterComponent from "../../components/footer/footer.component";
 
 const HomePage = () => {
   return (
@@ -109,10 +110,10 @@ const HomePage = () => {
       </div>
 
       <section className="question-section d-flex">
-        <div className="row p-3 my-auto w-100 test">
+        <div className="row p-3 my-auto w-100 ">
           {" "}
           <div className="col-md-8">
-            <h1>Do you Have A Question?</h1>
+            <h1 className="header-text">Do you Have A Question?</h1>
             We are always avalilabie to answer
           </div>
           <div className="col-4 d-flex">
@@ -138,6 +139,8 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+
+      <FooterComponent />
     </>
   );
 };
