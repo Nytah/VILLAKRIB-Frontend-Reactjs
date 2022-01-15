@@ -1,3 +1,13 @@
+.top-nav {
+  position: absolute;
+  top: 20px;
+  z-index: 3;
+  width: 100%;
+}
+.top-nav .modal-backdrop {
+  z-index: 0 !important;
+  /* width: 100%; */
+}
 .propertyCategories {
   width: 100%;
   text-align: center;
@@ -31,9 +41,14 @@
   margin-top: 40px;
 }
 
+.short-line {
+  width: 200px;
+  background-color: blue;
+  border: 2px solid blue;
+}
 .ourFeaturedAgents {
   width: 100%;
-  text-align: center;
+  text-align: left;
   margin: 35px;
   margin-right: 200px;
 }
@@ -41,9 +56,9 @@
 .ourFeaturedAgents > h1 {
   font-family: Istok Web;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 700;
   font-size: 30px;
-  color: #000000;
+  color: #0d00ff;
 }
 
 .ourFeaturedAgents > p {
@@ -62,4 +77,95 @@
   flex-direction: row;
   margin: 35px;
   margin-top: 40px;
+}
+.test {
+  border: solid;
+}
+.image-col-house {
+  height: 500px;
+
+  position: relative;
+}
+.right-image-house {
+  /* border: solid red; */
+  position: absolute;
+  margin-top: 20px;
+  border-top-right-radius: 100px;
+  overflow: hidden;
+  width: 500px;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
+}
+.right-image-house img {
+  border-top-right-radius: 100px;
+  width: 1000px;
+  height: 550px;
+}
+.blog-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+.image-behaind-text-div {
+  position: relative;
+  /* border: solid; */
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  width: 900px;
+  height: 300px;
+  overflow: hidden;
+}
+.main-blog-div {
+  border-top-left-radius: 100px;
+  width: 100%;
+  background-color: blue;
+}
+.image-behaind-text-div img {
+  width: 100%;
+}
+.text-over-image {
+  position: absolute;
+  top: 10%;
+  right: 20px;
+  width: 500px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 15px royalblue;
+  text-align: right;
+}
+.download-app-section {
+  padding: 50px;
+  background-color: blue;
+  color: white;
+}
+.download-text {
+  /* border: solid; */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.download-text h1 {
+  font-size: 60px;
+  font-weight: 900;
+}
+.download-text p {
+  font-size: 30px;
+  font-weight: 700;
+}
+.download-text .store-icons img {
+  /* border: solid; */
+  width: 150px;
+  margin: 0 20px;
+}
+.download-app-image {
+  /* border: solid; */
+  width: 50%;
+}
+.download-app-image img {
+  /* border: solid; */
+  width: 500px;
 }
