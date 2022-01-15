@@ -1,33 +1,24 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./homepage.css";
-// import PropCategory from "../../components/PropCategory";
-// import WhatWeOffer from "../../components/WhatWeOffer";
-import houseImage from "../../assets/images/2.jpg";
-// import image3 from "../../assets/images/image 6.png";
+import PropCategory from "../../components/PropCategory";
+import WhatWeOffer from "../../components/WhatWeOffer";
+import image3 from "../../assets/images/image 6.png";
 import image1 from "../../assets/images/image 4.png";
-// import image2 from "../../assets/images/image 7.png";
-// import image4 from "../../assets/images/image-.png";
 import playstore from "../../assets/images/playstore.jpg";
 import appstore from "../../assets/images/appstore.jpg";
 import mobileAppImage from "../../assets/images/villakrib app phone.jpg";
-import ReactCarousel, {
-  PropertyListings,
-} from "../../components/carousel/carousel.component";
+import image2 from "../../assets/images/image 7.png";
+import houseImage from "../../assets/images/2.jpeg";
+import image4 from "../../assets/images/image-.png";
 import Agent1 from "../../assets/images/Agent1.png";
 import Agent2 from "../../assets/images/Agent2.png";
 import Agent3 from "../../assets/images/Agent3.png";
 import FeaturedAgent from "../../components/featuredAgent/featuredAgent.component";
-<<<<<<< HEAD
 import FooterComponent from "../../components/footer/footer.component";
-=======
-import NavComponent from "../../components/nav/nav.component";
->>>>>>> 7d1e196907c7a05aba6d948d1cb3c72a4536741f
 
 const HomePage = () => {
   return (
     <>
-<<<<<<< HEAD
       <WhatWeOffer />
       <div className="propertyCategories">
         <h1>Property Categories</h1>
@@ -44,82 +35,17 @@ const HomePage = () => {
       <div className="explorePropertyListings">
         <h1>Explore Property Listings</h1>
         <p> Explore property listings through our digital image library</p>
-=======
-      <div className="top-nav">
-        <NavComponent />
       </div>
-      <ReactCarousel />
-      {/* let us walk you home  section */}
-      <div className="container">
-        <div className="row image-row-house">
-          <div className="col-md-6 image-col-house">
-            <div className="right-image-house">
-              <img src={houseImage} alt="" />
-            </div>
-          </div>
-          <div className="col-md-6  d-flex">
-            <div className="my-auto">
-              <hr className="short-line" />
-              <h1>Let us walk you home.</h1>
-              Exquisit property listing for buyers, large Clientele for sellers,
-              location database and price ranging for renting. Availability of
-              agents and movers, with a easy means to contact them. Digital
-              imagery library to enjoy shopping with us and an advisory team for
-              investors. Villakrib brings ease with smiles, making your walk
-              home exciting.
-              <Link to="">Learn More...</Link>
-            </div>
-          </div>
-        </div>
->>>>>>> 7d1e196907c7a05aba6d948d1cb3c72a4536741f
-      </div>
-      <section
-        style={{
-          backgroundColor: "rgb(140,140,250)",
-          paddingTop: "80px",
-        }}
-      >
-        <div
-          className=" text-white"
-          style={{
-            //   marginTop: "80px",
-            borderTopLeftRadius: "100px",
-            padding: "15px 60px",
-            backgroundColor: "rgb(0, 8, 255)",
-          }}
-        >
-          <div className="PropertyListings">
-            <PropertyListings />
-          </div>
-        </div>
-      </section>
-      {/* <WhatWeOffer /> 
-      // //{" "}
-      // <div className="propertyCategories">
-      //   // <h1>Property Categories</h1>
-      //   // <p>check out property types that we can offer you</p>
-      //   //{" "}
-      // </div>
-      // //{" "}
-      // <div className="propCategory">
-      //   // <PropCategory image={image1} text="Land" />
-      //   // <PropCategory image={image2} text="House & Villa" />
-      //   // <PropCategory image={image3} text="Offices" />
-      //   // <PropCategory image={image4} text="Furnished Appartments" />
-      //   //{" "}
-      </div>*/}
+
       <div className="ourFeaturedAgents">
-        <hr className="short-line" />
         <h1>Our Featured Agents</h1>
-<<<<<<< HEAD
         <p>
           {" "}
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Ut
           enim ad minim veniam.
         </p>
-=======
->>>>>>> 7d1e196907c7a05aba6d948d1cb3c72a4536741f
       </div>
+
       <div className="featuredAgent">
         <FeaturedAgent
           image={Agent1}
@@ -137,9 +63,6 @@ const HomePage = () => {
           name="John Doe"
         />
       </div>
-<<<<<<< HEAD
-      <FooterComponent />
-=======
 
       <div className="main-blog-div">
         <section className="blog-section">
@@ -171,6 +94,19 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+      {/* blue color : #26539F
+//       fade blue color : #164697
+//       liner-gridant : #164697 ,5D82BA
+//       botten color : #0B4095
+//       botten color : #1A53B8
+//       txet color : #164697
+// font family : Montserrat
+// header font size: 30
+// font family :Istok Web;
+// text-font size: 20
+//       background: rgb(22,70,151);
+// background: linear-gradient(180deg, rgba(22,70,151,1) 17%, rgba(22,70,151,1) 31%, rgba(93,130,186,1) 100%);
+      */}
       <section className="download-app-section">
         <div className="d-flex">
           <div className="download-text">
@@ -186,7 +122,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
->>>>>>> 7d1e196907c7a05aba6d948d1cb3c72a4536741f
+      <FooterComponent />
     </>
   );
 };
