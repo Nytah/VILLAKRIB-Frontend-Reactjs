@@ -13,12 +13,12 @@ const FooterComponent = () => {
           <Col xs={4} className="footerContainer-p">
             <div className="footerLogoImg">
               <img className="logoImageBorder" src={logoImg} alt="" />
+              <div>
+                <h8 className="contactHeading">Contacts</h8>
+              </div>
               <p className="footerLogoText">
-                Receive updates, hot deals, tutorials, discounts sent straight
-                to your inbox every month
+               9 Olaniyi Toki Street Akobo Ojurin, Ibadan, Nigeria
               </p>
-              <input type="email" placeholder="Email" />
-              <input type="button" value="Subcribe" />
               <div className="footerSocialContact">
                 <i class="bi bi-linkedin" size={30}></i>
                 <i class="bi bi-instagram" size={30}></i>

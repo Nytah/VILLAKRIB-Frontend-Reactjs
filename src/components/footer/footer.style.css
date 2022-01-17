@@ -15,16 +15,14 @@
   width: 150px;
 }
 .footerLogoText {
+  font-family: Istok Web;
+  font-style: normal;
+  font-weight: bold;
   font-size: 20px;
-}
-.footerLogoImg > input[type="button"] {
-  background-color: #e51414;
-  color: white;
+  line-height: 29px;
   margin-left: 10px;
-}
-
-.footerLogoImg > input[type="email"] {
-  width: 75%;
+  margin-top: 5px;
+  color: #ffffff;
 }
 
 .footerSocialContact {
