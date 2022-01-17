@@ -78,11 +78,10 @@ const FooterComponent = () => {
             </div>
           </Col>
           <Col className="footerContainer-p">
-            <h8 className="contactHeading">Contact</h8>
+            <h8 className="contactHeading">Subscribe</h8>
             <div className="inputContactEmail">
               <input type="email" placeholder="Email" />
-              <textarea type="text" placeholder="Message" />
-              <input type="button" value="Send" />
+              <input type="button" value="Subscribe" />
             </div>
           </Col>
         </Row>
