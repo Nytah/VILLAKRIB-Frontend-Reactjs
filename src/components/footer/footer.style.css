@@ -17,13 +17,13 @@
 .footerLogoText {
   font-size: 20px;
 }
-.footerLogoImg > input[type='button'] {
+.footerLogoImg > input[type="button"] {
   background-color: #e51414;
   color: white;
   margin-left: 10px;
 }
 
-.footerLogoImg > input[type='email'] {
+.footerLogoImg > input[type="email"] {
   width: 75%;
 }
 
@@ -61,18 +61,34 @@ ul {
   text-decoration: none;
 }*/
 
+.inputContactEmail {
+  display: flex;
+}
+
 .inputContactEmail input {
-  margin-bottom: 8px;
-  width: 100%;
+  background: #ffffff;
+  border-radius: 2px;
+  border: none;
+  outline: hidden;
+  padding: 5px;
 }
 
-.inputContactEmail textarea {
-  width: 100%;
-}
-
-.inputContactEmail input[type='button'] {
+.inputContactEmail button {
   color: white;
-  background-color: #e51414;
+  font-family: Istok Web;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 26px;
+  background: linear-gradient(
+    180deg,
+    #9acffc 0%,
+    #1e93f6 84.37%,
+    rgba(1, 105, 194, 0) 100%
+  );
+  border-radius: 0px 18px 0px 0px;
+  border: none;
+  margin-left: 10px;
 }
 
 .footerBottom {
