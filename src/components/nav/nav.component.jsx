@@ -186,13 +186,36 @@ const NavComponent = () => {
               </div>
             </li>
             <li>
-              <Link to="">Aid</Link>{" "}
+              <Link to="">Aid</Link>
+              <div className="subMenuOne">
+                <ul>
+                  <li><Link to="">Blog</Link></li>
+                  <li><Link to="">Cost Calculator</Link></li>
+                  <li><Link to="">Scheduling</Link></li>
+                </ul>
+              </div>
             </li>
             <li>
-              <Link to="">Guide</Link>{" "}
+              <Link to="">Guide</Link>
+              <div className="subMenuOne">
+                <ul>
+                  <li><Link to="">Update Profile</Link></li>
+                  <li><Link to="">Find Agents</Link></li>
+                  <li><Link to="">Find Sellers</Link></li>
+                  <li><Link to="">Find Buyers</Link></li>
+                  <li><Link to="">Find Investors</Link></li>
+                  <li><Link to="">Advisory</Link></li>
+                </ul>
+              </div>
             </li>
             <li>
-              <Link to="">About Us</Link>{" "}
+              <Link to="">About Us</Link>
+              <div className="subMenuOne">
+                <ul>
+                  <li><Link to="">Team</Link></li>
+                  <li><Link to="">Career</Link></li>
+                </ul>
+              </div>
             </li>
             <li>
               <Link
