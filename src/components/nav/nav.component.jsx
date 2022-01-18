@@ -200,7 +200,21 @@ const NavComponent = () => {
               <div className="subMenuOne">
                 <ul id="bb3">
                   <li><Link to="">Update Profile</Link></li>
-                  <li><Link to="">Find Agents</Link></li>
+                  <li className="hoverOne"><Link to="">Find Agents</Link>
+                    <div className="subMenuTwo">
+                      <ul>
+                        <li className="hoverTwo"><Link to="">Contact</Link>
+                          <div className="subMenuThree">
+                            <ul>
+                              <li><Link to="">Call</Link></li>
+                              <li><Link to="">Chat</Link></li>
+                              <li><Link to="">Push Notification</Link></li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
                   <li><Link to="">Find Sellers</Link></li>
                   <li><Link to="">Find Buyers</Link></li>
                   <li><Link to="">Find Investors</Link></li>
