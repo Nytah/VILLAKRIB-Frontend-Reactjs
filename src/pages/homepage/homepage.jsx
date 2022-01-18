@@ -21,6 +21,8 @@ import appstore from "../../assets/images/appstore.png";
 import mobileAppImage from "../../assets/images/villakrib_app_phone.png";
 import FooterComponent from "../../components/footer/footer.component";
 
+
+
 const HomePage = () => {
   return (
     <>

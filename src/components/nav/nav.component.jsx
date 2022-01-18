@@ -174,10 +174,16 @@ const NavComponent = () => {
         <div className="link-div">
           <ul>
             <li>
-              <Link to="">Login</Link>{" "}
+              <Link to="">Home</Link>{" "}
             </li>
             <li>
-              <Link to="">Properties</Link>{" "}
+              <Link to="">Properties</Link>
+              <div className="subMenuOne">
+                <ul>
+                  <li><Link to="">Image Library</Link></li>
+                  <li><Link to="">Add Listings</Link></li>
+                </ul>
+              </div>
             </li>
             <li>
               <Link to="">Aid</Link>{" "}
