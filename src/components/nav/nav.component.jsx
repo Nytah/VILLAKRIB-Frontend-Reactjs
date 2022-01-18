@@ -179,7 +179,7 @@ const NavComponent = () => {
             <li>
               <Link to="">Properties</Link>
               <div className="subMenuOne">
-                <ul>
+                <ul id="bb1">
                   <li><Link to="">Image Library</Link></li>
                   <li><Link to="">Add Listings</Link></li>
                 </ul>
@@ -188,7 +188,7 @@ const NavComponent = () => {
             <li>
               <Link to="">Aid</Link>
               <div className="subMenuOne">
-                <ul>
+                <ul id="bb2">
                   <li><Link to="">Blog</Link></li>
                   <li><Link to="">Cost Calculator</Link></li>
                   <li><Link to="">Scheduling</Link></li>
@@ -198,7 +198,7 @@ const NavComponent = () => {
             <li>
               <Link to="">Guide</Link>
               <div className="subMenuOne">
-                <ul>
+                <ul id="bb3">
                   <li><Link to="">Update Profile</Link></li>
                   <li><Link to="">Find Agents</Link></li>
                   <li><Link to="">Find Sellers</Link></li>
@@ -211,7 +211,7 @@ const NavComponent = () => {
             <li>
               <Link to="">About Us</Link>
               <div className="subMenuOne">
-                <ul>
+                <ul id="bb4">
                   <li><Link to="">Team</Link></li>
                   <li><Link to="">Career</Link></li>
                 </ul>
