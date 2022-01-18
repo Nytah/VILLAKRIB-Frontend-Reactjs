@@ -87,7 +87,8 @@
   margin-left: 13px;
 }
 
-.subMenuTwo {
+.subMenuTwo,
+.subMenuThree {
   display: none;
 }
 
@@ -96,6 +97,13 @@
   position: absolute;
   margin-top: -50px;
   margin-left: 146px;
+}
+
+.hoverTwo:hover .subMenuThree {
+  display: block;
+  position: absolute;
+  margin-top: -50px;
+  margin-left: 89px;
 }
 
 .btn-close {
