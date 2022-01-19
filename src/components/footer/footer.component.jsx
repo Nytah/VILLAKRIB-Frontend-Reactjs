@@ -11,15 +11,19 @@ const FooterComponent = ({}) => {
     <Row className="navbar-fixed-bottom">
       <Row className="container-sm footerContainer">
         <Row className="overflow-auto">
-          <Col className="col-4 footerContainer-p">
+          <Col className="col-md-4 footerContainer-p">
             <div className="footerLogoImg">
               <img className="logoImageBorder mb-4" src={logoImg} alt="" />
               <p className="footerLogoText">
                 Receive updates, hot deals, tutorials, discounts sent straight
                 to your inbox every month
               </p>
-              <div className="d-flex w-100">
-                <input type="email" placeholder="Email" className="py-1" />
+              <div className="flex-row">
+                <input
+                  type="email"
+                  placeholder="Email"
+                  className="py-1 subscribe-email"
+                />
                 <input
                   type="button"
                   value="Subscribe"
@@ -31,7 +35,7 @@ const FooterComponent = ({}) => {
               </div>
             </div>
           </Col>
-          <Col className="col-2 footerContainer-p">
+          <Col className="col-md-2 footerContainer-p">
             <h2>Navigation</h2>
             <div className="footerNavLink">
               <ul>
@@ -63,7 +67,7 @@ const FooterComponent = ({}) => {
               </ul>
             </div>
           </Col>
-          <Col className=" col-2 footerContainer-p">
+          <Col className=" col-md-2 footerContainer-p">
             <h2>Categories</h2>
             <div className="footerCatLink">
               <ul>
@@ -105,7 +109,7 @@ const FooterComponent = ({}) => {
               </ul>
             </div>
           </Col>
-          <Col className="col-4 footerContainer-p">
+          <Col className="col-md-4 footerContainer-p">
             <h2 className="contactHeading">Contact</h2>
             <div className="inputContactEmail">
               <input

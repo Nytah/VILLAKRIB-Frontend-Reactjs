@@ -20,7 +20,7 @@ const FeaturedAgent = ({ image, name, location }) => {
           <p>{name}</p>
         </div>
         <div className="socials">
-          <SocialIcon />
+          <SocialIcon iconClass="icon-blue" />
         </div>
         <div className="contact">
           <div className="email">

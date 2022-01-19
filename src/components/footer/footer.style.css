@@ -98,12 +98,17 @@ ul {
   padding: 5px;
 }
 
+.subscribe-email {
+  margin-right: 8px;
+}
+
 .inputContactEmail input[type="button"] {
   color: white;
   font-family: Istok Web;
   font-style: normal;
   background-color: #dc3545;
   font-weight: bold;
+  margin-left: 4px;
 }
 
 .footerBottom {
