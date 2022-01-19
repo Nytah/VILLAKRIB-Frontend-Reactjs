@@ -26,7 +26,7 @@
   display: flex;
 }
 
-#nav .link-div ul a {
+#nav .link-div ul li a {
   /* border: solid; */
   text-decoration: none;
   color: #fff;
@@ -35,9 +35,82 @@
   font-weight: 600;
   /* margin: auto 0; */
 }
-#nav .link-div ul a:hover {
-  text-decoration: underline;
-  color: #ddd;
+#nav .link-div ul li a:hover {
+  color: #164697;
+}
+
+.subMenuOne {
+  display: none;
+}
+
+#nav .link-div ul li:hover .subMenuOne {
+  display: block;
+  position: absolute;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+#nav .link-div ul li:hover .subMenuOne ul {
+  display: block;
+  background: rgba(0, 0, 0, 0.5);
+  /* margin: 10px; */
+}
+
+#nav .link-div ul li:hover .subMenuOne ul li {
+  border-bottom: 1px solid #ffffff;
+  border-radius: 0;
+  margin-top: 0px;
+  text-align: center;
+}
+
+#nav .link-div ul li:hover .subMenuOne ul li a {
+  font-family: Istok Web;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 50px;
+  padding: 10px;
+}
+
+#nav .link-div ul li:hover .subMenuOne #bb1 {
+  margin-left: -10px;
+}
+
+#nav .link-div ul li:hover .subMenuOne #bb2 {
+  margin-left: -50px;
+}
+
+#nav .link-div ul li:hover .subMenuOne #bb3 {
+  margin-left: -20px;
+}
+
+#nav .link-div ul li:hover .subMenuOne #bb4 {
+  margin-left: 13px;
+}
+
+.subMenuTwo,
+.subMenuThree {
+  display: none;
+}
+
+.hoverOne:hover .subMenuTwo {
+  display: block;
+  position: absolute;
+  margin-top: -50px;
+  margin-left: 146px;
+}
+
+.hoverTwo:hover .subMenuThree {
+  display: block;
+  position: absolute;
+  margin-top: -50px;
+  margin-left: 89px;
+}
+
+@media screen and (max-width: 878px) {
+  #nav .link-div {
+    display: none;
+  }
 }
 
 .btn-close {
@@ -103,11 +176,11 @@ ul.nav {
   padding: 0 10px;
 }
 
-.form-div .input-div input[type='checkbox'] {
+.form-div .input-div input[type="checkbox"] {
   width: auto;
   height: auto;
 }
-.form-div .input-div input[type='button'] {
+.form-div .input-div input[type="button"] {
   background-color: rgba(31, 31, 248, 0.611);
   color: rgb(0, 0, 36);
   /* }rgba(98, 98, 255, 0.611)rgba(98, 98, 255, 0.871) */

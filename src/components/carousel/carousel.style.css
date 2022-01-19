@@ -108,20 +108,23 @@
 }
 .property-listing-slide {
   position: relative;
-  height: 250px;
+  /* height: 250px; */
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* border: solid; */
   padding-top: 25px;
-  /* background-color: var(--main-blue); */
+  background-color: var(--main-blue);
+  border-top-left-radius: 100px;
+
   color: white;
 }
 .property-listing-slide .slide-icons {
   top: 0px;
   right: 10px;
-  position: absolute;
+  /* position: absolute; */
 }
 .property-listing-slide .slide-icons i {
   font-size: 25px;
@@ -134,6 +137,33 @@
   margin: 10px;
   border-radius: 20px;
   /* display: none; */
+}
+@media screen and (max-width: 339px) {
+  .property-listing-slide {
+    /* border: red solid; */
+  }
+  .property-listing-slide .property-slide {
+    /* border: red solid; */
+    /* width: 120px; */
+    /* height: 100px; */
+    /* margin: 5px; */
+  }
+  .property-listing-slide-image {
+    border: solid;
+    width: 120px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 20px;
+    /* display: none; */
+  }
+  .property-listing-slide .slide-icons i {
+    font-size: 20px;
+    margin: 0px;
+    /* float: left; */
+  }
+}
+.property-listing-slide * {
+  /* border: solid; */
 }
 .property-slide {
 }

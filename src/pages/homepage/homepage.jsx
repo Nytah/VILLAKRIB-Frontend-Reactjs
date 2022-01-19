@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./homepage.css";
 // import PropCategory from "../../components/PropCategory";
 // import WhatWeOffer from "../../components/WhatWeOffer";
-import houseImage from "../../assets/images/2.jpg";
+import houseImage from "../../assets/images/slide1.jpg";
 // import image3 from "../../assets/images/image 6.png";
 // import image1 from "../../assets/images/image 4.png";
 // import image2 from "../../assets/images/image 7.png";
@@ -21,6 +21,8 @@ import appstore from "../../assets/images/appstore.png";
 import mobileAppImage from "../../assets/images/villakrib_app_phone.png";
 import FooterComponent from "../../components/footer/footer.component";
 
+
+
 const HomePage = () => {
   return (
     <>
@@ -31,14 +33,14 @@ const HomePage = () => {
       <ReactCarousel />
 
       {/* let us walk you home  section */}
-      <div className="container">
+      <div className="container walk-home-section">
         <div className="row image-row-house">
           <div className="col-md-6 image-col-house">
             <div className="right-image-house">
               <img src={houseImage} alt="" />
             </div>
           </div>
-          <div className="col-md-6  d-flex">
+          <div className="col-md-6  d-flex text-col-house">
             <div className="my-auto">
               <hr className="hr" />
               <h1 className="header-text">Let us walk you home.</h1>
@@ -57,11 +59,11 @@ const HomePage = () => {
         </div>
       </div>
       <section className="explor-section">
-        <div className=" PropertyListingsDiv">
-          <div className="PropertyListings">
-            <PropertyListings />
-          </div>
-        </div>
+        {/* <div className=" PropertyListingsDiv">
+          <div className="PropertyListings"> */}
+        <PropertyListings />
+        {/* </div>
+        </div> */}
       </section>
       {/* <WhatWeOffer /> */}
 
@@ -88,47 +90,43 @@ const HomePage = () => {
           name="John Doe"
         />
       </div>
-
-      <div className="main-blog-div">
-        <section className="blog-section">
-          <div className="image-behaind-text-div">
-            <img src={houseImage} alt="" />
-            <div className="text-over-image">
-              <div className="header">Lorem ipsum dolor sit amet</div>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae
-              reprehenderit dignissimos velit maxime iste adipisci non assumenda
-              autem, optio quis rerum dolorum sint dolor excepturi quaerat
-              obcaecati voluptatibus culpa in.
-              <p>
-                <button className="btn btn-primary mt-3 fancy-button l float-end">
-                  Read Blog...
-                </button>
-              </p>
-            </div>
+      <section className="blog-section">
+        <div className="image-behaind-text-div">
+          <img src={houseImage} alt="" />
+          <div className="text-over-image">
+            <div className="header">Lorem ipsum dolor sit amet</div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae
+            reprehenderit dignissimos velit maxime iste adipisci non assumenda
+            autem, optio quis rerum dolorum sint dolor excepturi quaerat
+            obcaecati voluptatibus culpa in.
+            <p>
+              <button className="btn btn-primary mt-3 fancy-button l float-end">
+                Read Blog...
+              </button>
+            </p>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
 
       <section className="question-section d-flex">
         <div className="row p-3 my-auto w-100 ">
           {" "}
-          <div className="col-md-8">
+          <div className="col-md-8 ">
             <h1 className="header-text">Do you Have A Question?</h1>
             We are always avalilabie to answer
           </div>
-          <div className="col-4 d-flex">
-            <div className="btn btn-primary my-auto fancy-button l r">
+          <div className="col-4 button-col d-flex">
+            <div className="btn btn-primary my-auto fancy-button">
               Contact Us
             </div>
           </div>
         </div>
       </section>
 
-      <section className="download-app-section">
+      {/* <section className="download-app-section">
         <div className="d-flex">
           <div className="download-text">
-            <h1>Download our App</h1>
-            <p>App is free</p>
+            <h1 className="header-text">Download our App is free</h1>
             <div className="store-icons d-flex">
               <img src={appstore} alt="" />
               <img src={playstore} alt="" />
@@ -136,6 +134,23 @@ const HomePage = () => {
           </div>
           <div className="download-app-image">
             <img src={mobileAppImage} alt="" />
+          </div>
+        </div>
+      </section> */}
+
+      <section className="download-app-section">
+        <div className="conta iner">
+          <div className="row">
+            <div className="col-md-6 download-text">
+              <h1 className="header-text">Download our App is free</h1>
+              <div className="store-icons d-flex">
+                <img src={appstore} alt="" />
+                <img src={playstore} alt="" />
+              </div>
+            </div>
+            <div className="col-md-6 download-app-image">
+              <img src={mobileAppImage} alt="" />
+            </div>
           </div>
         </div>
       </section>

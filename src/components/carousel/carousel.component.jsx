@@ -136,8 +136,8 @@ export const PropertyListings = () => {
     <>
       <div className="property-listing-slide ">
         <div className="slide-icons w-100 d-flex justify-content-between">
-          <h4 style={{ marginLeft: "100px" }}>Explore property listings</h4>
-          <p>
+          <h4 style={{ marginLeft: "50px" }}>Explore property listings</h4>
+          <div>
             {" "}
             <i
               className="bi-arrow-left-circle-fill"
@@ -147,7 +147,7 @@ export const PropertyListings = () => {
               className="bi-arrow-right-circle-fill"
               onClick={nextPropertySlide}
             ></i>
-          </p>
+          </div>
         </div>
         {PropertyListingsImage.map((image, index) => {
           return (
