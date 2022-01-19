@@ -140,7 +140,9 @@ const HomePage = () => {
         </div>
       </section>
 
-      <FooterComponent />
+      <div className="footerComponent">
+        <FooterComponent />
+      </div>
     </>
   );
 };

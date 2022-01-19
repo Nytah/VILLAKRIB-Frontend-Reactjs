@@ -1,18 +1,13 @@
-import React from 'react';
+import React from "react";
 import "./featuredAgent.style.css";
 import vector from "../../assets/images/Vector.png";
-import facebook from "../../assets/images/facebook.png";
-import instagram from "../../assets/images/instagram.png";
-import linkedin from "../../assets/images/linkedin.png";
-import email from "../../assets/images/email.png";
 import envelope from "../../assets/images/envelope.png";
 import phone from "../../assets/images/phone.png";
+import SocialIcon from "../socialIcon/socialIcon";
 
-
-
-const FeaturedAgent = ({image, name, location}) => {
-  return ( 
-    <div className='featuredAgentBox'>
+const FeaturedAgent = ({ image, name, location }) => {
+  return (
+    <div className="featuredAgentBox">
       <div className="featuredAgentImg">
         <img src={image} alt="featured Agent" />
       </div>
@@ -25,10 +20,7 @@ const FeaturedAgent = ({image, name, location}) => {
           <p>{name}</p>
         </div>
         <div className="socials">
-          <img src={linkedin} alt="" />
-          <img src={instagram} alt="" />
-          <img src={facebook} alt="" />
-          <img src={email} alt="" />
+          <SocialIcon />
         </div>
         <div className="contact">
           <div className="email">
@@ -41,7 +33,7 @@ const FeaturedAgent = ({image, name, location}) => {
         </div>
       </div>
     </div>
-   );
-}
- 
+  );
+};
+
 export default FeaturedAgent;
