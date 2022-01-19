@@ -40,6 +40,12 @@
   color: #ddd;
 }
 
+@media screen and (max-width: 878px) {
+  #nav .link-div {
+    display: none;
+  }
+}
+
 .btn-close {
   position: absolute;
   top: 20px;
