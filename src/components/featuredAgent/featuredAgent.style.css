@@ -118,3 +118,7 @@
   object-fit: contain;
   margin-top: 5px;
 }
+
+.icon-blue {
+  color: var(--main-blue);
+}

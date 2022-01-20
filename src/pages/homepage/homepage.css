@@ -156,6 +156,20 @@
   margin: 35px;
   margin-top: 40px;
 }
+
+/*.featuredAgent > socialIcon {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 25px;
+  justify-content: space-between;
+  cursor: pointer;
+}*/
+
+/*.socialIcon > img {
+  object-fit: contain;
+}
+*/
+
 .test {
   border: solid;
 }

@@ -162,7 +162,11 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <FooterComponent />
+
+      <div className="footerComponent">
+        <FooterComponent />
+      </div>
+
     </>
   );
 };
