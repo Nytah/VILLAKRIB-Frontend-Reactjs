@@ -127,6 +127,7 @@ const HomePage = () => {
           <div className="searchButton">
             <button>Search</button>
           </div>
+          
         </div>
       </div>
 

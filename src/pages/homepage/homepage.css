@@ -97,7 +97,11 @@
 }
 
 .searchArea {
+  display: flex;
+  flex-direction: column;
   background: rgba(39, 66, 134, 0.5);
+  height: 12vh;
+  padding: 0px 15px;
 }
 
 .buttons > button {
@@ -112,6 +116,36 @@
   line-height: 29px;
 
   color: #968d8d;
+}
+
+.keyInputs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inputs {
+  display: flex;
+}
+
+.input > input {
+  width: 590px;
+  height: 42px;
+}
+
+.type select {
+  width: 214px;
+  height: 42px;
+}
+
+.minPrice select {
+  width: 214px;
+  height: 42px;
+}
+
+.maxPrice select {
+  width: 214px;
+  height: 42px;
 }
 
 .propertyCategories {
