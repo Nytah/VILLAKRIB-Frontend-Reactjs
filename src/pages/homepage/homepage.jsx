@@ -18,7 +18,7 @@ import playstore from "../../assets/images/playstore.png";
 import appstore from "../../assets/images/appstore.png";
 import mobileAppImage from "../../assets/images/villakrib_app_phone.png";
 import FooterComponent from "../../components/footer/footer.component";
-import { minPrice, maxPrice } from "./prices";
+import { minPrices, maxPrices } from "./prices";
 
 const HomePage = () => {
   return (
@@ -107,7 +107,7 @@ const HomePage = () => {
             <div className="minPrice">
               <select name="" id="">
                 <option value="" disabled selected hidden>Min Price</option>
-                {minPrice.map((price, index)=>{
+                {minPrices.map((price, index)=>{
                  return <option key={index}>{price}</option>
                 })}
               </select>
@@ -116,7 +116,7 @@ const HomePage = () => {
             <div className="maxPrice">
               <select name="" id="">
                 <option value="" disabled selected hidden>Max Price</option>
-                {maxPrice.map((price, index)=>{
+                {maxPrices.map((price, index)=>{
                  return <option key={index}>{price}</option>
                 })}
               </select>
