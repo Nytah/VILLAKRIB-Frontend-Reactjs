@@ -4,13 +4,11 @@ import "./homepage.css";
 // import PropCategory from "../../components/PropCategory";
 // import WhatWeOffer from "../../components/WhatWeOffer";
 import houseImage from "../../assets/images/slide1.jpg";
-// import image3 from "../../assets/images/image 6.png";
+import heroImage from "../../assets/images/slide3.jpg";
 // import image1 from "../../assets/images/image 4.png";
 // import image2 from "../../assets/images/image 7.png";
 // import image4 from "../../assets/images/image-.png";
-import ReactCarousel, {
-  PropertyListings,
-} from "../../components/carousel/carousel.component";
+import { PropertyListings } from "../../components/carousel/carousel.component";
 import Agent1 from "../../assets/images/Agent1.png";
 import Agent2 from "../../assets/images/Agent2.png";
 import Agent3 from "../../assets/images/Agent3.png";
@@ -21,8 +19,6 @@ import appstore from "../../assets/images/appstore.png";
 import mobileAppImage from "../../assets/images/villakrib_app_phone.png";
 import FooterComponent from "../../components/footer/footer.component";
 
-
-
 const HomePage = () => {
   return (
     <>
@@ -30,7 +26,24 @@ const HomePage = () => {
         <NavComponent />
       </div>
 
-      <ReactCarousel />
+      {/*<ReactCarousel /> */}
+
+      <section className="hero-section">
+        <div className="hearo-div">
+          <img src={heroImage} className="w-100" alt="" />
+          <div className="hero-text-over-image">
+            Easy Buy, Easy Life
+            <p>Down to dusk, home is best</p>
+          </div>
+          {/* <div className="search-div-over-image">
+            <div className="form-div">
+              <div className="input-div">
+                <input type="text" />
+              </div>
+            </div>
+          </div> */}
+        </div>
+      </section>
 
       {/* let us walk you home  section */}
       <div className="container walk-home-section">
@@ -66,13 +79,11 @@ const HomePage = () => {
         </div> */}
       </section>
       {/* <WhatWeOffer /> */}
-
       <div className="ourFeaturedAgents">
         <hr className="hr" />
 
         <h1 className="header-text">Our Featured Agents</h1>
       </div>
-
       <div className="featuredAgent">
         <FeaturedAgent
           image={Agent1}
@@ -107,7 +118,6 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-
       <section className="question-section d-flex">
         <div className="row p-3 my-auto w-100 ">
           {" "}
@@ -122,7 +132,6 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-
       {/* <section className="download-app-section">
         <div className="d-flex">
           <div className="download-text">
@@ -137,7 +146,6 @@ const HomePage = () => {
           </div>
         </div>
       </section> */}
-
       <section className="download-app-section">
         <div className="conta iner">
           <div className="row">
@@ -154,7 +162,6 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-
       <FooterComponent />
     </>
   );
