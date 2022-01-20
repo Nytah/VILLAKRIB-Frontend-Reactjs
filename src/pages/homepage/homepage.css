@@ -85,6 +85,35 @@
     margin-left: -250px;
   }
 }
+
+.search > h1 {
+  text-align: center;
+  font-family: Istok Web;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 55px;
+  /* color: #ffffff; */
+}
+
+.searchArea {
+  background: rgba(39, 66, 134, 0.5);
+}
+
+.buttons > button {
+  background: #ffffff;
+  border: 1px solid #c8c3c3;
+  box-sizing: border-box;
+  border-radius: 3px;
+  font-family: Istok Web;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 29px;
+
+  color: #968d8d;
+}
+
 .propertyCategories {
   width: 100%;
   text-align: center;

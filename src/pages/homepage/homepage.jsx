@@ -28,6 +28,7 @@ const HomePage = () => {
 
       {/*<ReactCarousel /> */}
 
+
       <section className="hero-section">
         <div className="hearo-div">
           <img src={heroImage} className="w-100" alt="" />
@@ -44,6 +45,28 @@ const HomePage = () => {
           </div> */}
         </div>
       </section>
+
+      {/*Search Area*/}
+      <div className="search">
+        <h1>Search Your Next Home</h1>
+      </div>
+      <div className="searchArea">
+        <div className="buttons">
+          <button>Buy</button>
+          <button>Sell</button>
+          <button>Rent</button>
+        </div>
+        
+        <div className="keyInputs">
+          <div className="inputs">
+
+          </div>
+
+          <div className="searchButton">
+            <button>Search</button>
+          </div>
+        </div>
+      </div>
 
       {/* let us walk you home  section */}
       <div className="container walk-home-section">
