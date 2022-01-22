@@ -85,6 +85,131 @@
     margin-left: -250px;
   }
 }
+
+.firstHeader > h1 {
+  text-align: center;
+  font-family: Istok Web;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 55px;
+  /* color: #ffffff; */
+}
+
+.searchArea {
+  display: flex;
+  flex-direction: column;
+  background: rgba(39, 66, 134, 0.5);
+  height: 15vh;
+  padding: 0px 15px;
+}
+
+.buttons > button {
+  background: #ffffff;
+  border: 1px solid #c8c3c3;
+  box-sizing: border-box;
+  border-radius: 3px;
+  font-family: Istok Web;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 29px;
+
+  color: #968d8d;
+}
+
+.keyInputs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inputs {
+  display: flex;
+}
+
+.input > input {
+  width: 580px;
+  height: 42px;
+  background: #ffffff;
+  border: 1px solid #c8c3c3;
+  box-sizing: border-box;
+  border-radius: 3px;
+
+  font-family: Istok Web;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 29px;
+  color: #968d8d;
+}
+
+.type select {
+  width: 210px;
+  height: 42px;
+  background: #ffffff;
+  border: 1px solid #bcb6b6;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.minPrice select {
+  width: 210px;
+  height: 42px;
+  background: #ffffff;
+  border: 1px solid #bcb6b6;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.minPrice select option {
+  font-family: Istok Web;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+
+  color: #000000;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.maxPrice select {
+  width: 210px;
+  height: 42px;
+  background: #ffffff;
+  border: 1px solid #bcb6b6;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.maxPrice select option {
+  font-family: Istok Web;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+
+  color: #000000;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.searchButton > button {
+  width: 84px;
+  height: 46px;
+  background: #1a53b8;
+  border-radius: 0px 20px 0px 0px;
+  border: none;
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .propertyCategories {
   width: 100%;
   text-align: center;
