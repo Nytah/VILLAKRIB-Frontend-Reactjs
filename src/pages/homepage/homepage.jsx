@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./homepage.css";
 // import PropCategory from "../../components/PropCategory";
@@ -18,9 +18,16 @@ import playstore from "../../assets/images/playstore.png";
 import appstore from "../../assets/images/appstore.png";
 import mobileAppImage from "../../assets/images/villakrib_app_phone.png";
 import FooterComponent from "../../components/footer/footer.component";
-import { minPrices, maxPrices } from "./prices";
+// import { minPrices, maxPrices } from "../../assets/json/pricessets/json/prices";
+import searchData from "../../assets/json/searchData";
 
 const HomePage = () => {
+  const [searchDataState] = useState(searchData);
+  const { minPrices, maxPrices, type } = searchDataState;
+  console.log("minPrices -->", minPrices);
+  console.log("maxPrices -->", maxPrices);
+  console.log("type -->", type);
+
   return (
     <>
       <div className="top-nav">
@@ -29,7 +36,7 @@ const HomePage = () => {
       {/*<ReactCarousel /> */}
       <section className="hero-section">
         <div className="hearo-div">
-        <img src={heroImage} className="w-100" alt="" />
+          <img src={heroImage} className="w-100" alt="" />
           <div className="hero-text-over-image">
             Easy Buy, Easy Life
             <p>Down to dusk, home is best</p>
@@ -42,10 +49,58 @@ const HomePage = () => {
             </div>
           </div> */}
         </div>
+        {/* new search section
+        responsive with bootstrap grid system
+        */}
+        <section className="search-section">
+          <h1 className="text-center text-white">Search Your Next Home</h1>
+          <div className="container">
+            <div className="row">
+              <div className="col-md-4 col-sm-4">
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="test"
+                />
+              </div>
+              <div className="col-md-2 col-sm-2">
+                <select className="form-select">
+                  <option value="">test</option>
+                  <option value="">test</option>
+                  <option value="">test</option>
+                  <option value="">test</option>
+                </select>
+              </div>
+              <div className="col-md-2 col-sm-2">
+                <select className="form-select">
+                  <option value="">test</option>
+                  <option value="">test</option>
+                  <option value="">test</option>
+                  <option value="">test</option>
+                </select>
+              </div>
+              <div className="col-md-2 col-sm-2">
+                <select className="form-select">
+                  <option value="">test</option>
+                  <option value="">test</option>
+                  <option value="">test</option>
+                  <option value="">test</option>
+                </select>
+              </div>
+              <div className="col-md-2 col-sm-2 ">
+                <button className="btn btn-primary fancy-button r">
+                  {" "}
+                  Search...
+                </button>
+              </div>
+              {/* <div className="col-md-3">hi</div> */}
+            </div>
+          </div>
+        </section>
       </section>
 
       {/*Search Area*/}
-      <div className="search">
+      {/* <div className="search">
         <div className="firstHeader">
           <h1>Search Your Next Home</h1>
         </div>
@@ -103,7 +158,6 @@ const HomePage = () => {
                   </optgroup>
                 </select>
               </div>
-
               <div className="minPrice">
                 <select name="" id="">
                   <option value="" disabled selected hidden>
@@ -132,7 +186,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* let us walk you home  section */}
       <div className="container walk-home-section">
