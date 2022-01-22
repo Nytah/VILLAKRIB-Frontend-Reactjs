@@ -10,7 +10,7 @@
 }
 
 .whatWeOffer-header {
-  font-family: Istok Web;
+  /* font-family: Istok Web; */
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
@@ -20,7 +20,7 @@
 }
 
 .whatWeOffer-para {
-  font-family: Istok Web;
+  /* font-family: Istok Web; */
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -46,7 +46,7 @@
 }
 
 .header {
-  font-family: Istok Web;
+  /* font-family: Istok Web; */
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
@@ -56,7 +56,7 @@
 }
 
 .para {
-  font-family: Istok Web;
+  /* font-family: Istok Web; */
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -82,7 +82,7 @@
 .findYourSpec > ul > li {
   width: 50%;
   margin-bottom: 15px;
-  font-family: Istok Web;
+  /* font-family: Istok Web; */
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -101,7 +101,7 @@
   cursor: pointer;
   margin-bottom: 10px;
   justify-content: center;
-  font-family: Istok Web;
+  /* font-family: Istok Web; */
   font-style: normal;
   font-weight: bold;
   font-size: 23px;
@@ -129,7 +129,7 @@
 }
 
 .headerTwo {
-  font-family: Istok Web;
+  /* font-family: Istok Web; */
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
@@ -140,7 +140,7 @@
 }
 
 .paraTwo {
-  font-family: Istok Web;
+  /* font-family: Istok Web; */
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -166,7 +166,7 @@
   cursor: pointer;
   margin-bottom: 10px;
   justify-content: center;
-  font-family: Istok Web;
+  /* font-family: Istok Web; */
   font-style: normal;
   font-weight: bold;
   font-size: 23px;
@@ -193,7 +193,7 @@
 }
 
 .paraThree {
-  font-family: Istok Web;
+  /* font-family: Istok Web; */
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -219,7 +219,7 @@
   cursor: pointer;
   margin-bottom: 10px;
   justify-content: center;
-  font-family: Istok Web;
+  /* font-family: Istok Web; */
   font-style: normal;
   font-weight: bold;
   font-size: 23px;
@@ -245,7 +245,7 @@
   .findYourSpec > ul > li {
     width: 50%;
     margin-bottom: 15px;
-    font-family: Istok Web;
+    /* font-family: Istok Web; */
     font-style: normal;
     font-weight: normal;
     font-size: 14.5px;
@@ -282,7 +282,7 @@
 
   .header,
   .headerTwo {
-    font-family: Istok Web;
+    /* font-family: Istok Web; */
     font-style: normal;
     font-weight: normal;
     font-size: 30px;

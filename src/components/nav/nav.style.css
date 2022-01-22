@@ -64,7 +64,7 @@
 }
 
 #nav .link-div ul li:hover .subMenuOne ul li a {
-  font-family: Istok Web;
+  /* font-family: Istok Web; */
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -176,11 +176,11 @@ ul.nav {
   padding: 0 10px;
 }
 
-.form-div .input-div input[type="checkbox"] {
+.form-div .input-div input[type='checkbox'] {
   width: auto;
   height: auto;
 }
-.form-div .input-div input[type="button"] {
+.form-div .input-div input[type='button'] {
   background-color: rgba(31, 31, 248, 0.611);
   color: rgb(0, 0, 36);
   /* }rgba(98, 98, 255, 0.611)rgba(98, 98, 255, 0.871) */

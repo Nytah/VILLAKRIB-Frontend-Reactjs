@@ -25,9 +25,7 @@ const HomePage = () => {
       <div className="top-nav">
         <NavComponent />
       </div>
-
       {/*<ReactCarousel /> */}
-
       <section className="hero-section">
         <div className="hearo-div">
           <img src={heroImage} className="w-100" alt="" />
@@ -44,7 +42,6 @@ const HomePage = () => {
           </div> */}
         </div>
       </section>
-
       {/* let us walk you home  section */}
       <div className="container walk-home-section">
         <div className="row image-row-house">
@@ -162,11 +159,9 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-
       <div className="footerComponent">
         <FooterComponent />
       </div>
-
     </>
   );
 };

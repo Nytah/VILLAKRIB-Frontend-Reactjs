@@ -4,11 +4,13 @@
   margin: 0 !important;
   color: white;
   font-size: 20px;
-  padding: 0px 40px;
+  /* padding: 0px 40px; */
+  padding: 10px 5px;
 }
 
 .footerContainer-p {
-  padding: 50px 30px;
+  /* padding: 50px 30px; */
+  padding: 5px;
 }
 
 .logoImageBorder {
@@ -16,9 +18,10 @@
   width: 130px;
 }
 .footerLogoText {
-  font-family: Istok Web;
+  /* font-family: Istok Web; */
   font-style: normal;
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: 18px;
 }
 .btn-fancy-button {
   background-color: #e51414;
@@ -33,50 +36,67 @@
 .footerSocialContact {
   display: flex;
   flex-direction: row;
-  margin: 10px 25px;
+  /* margin: 10px 25px; */
+  margin-top: 10px;
   justify-content: space-between;
   cursor: pointer;
 }
-
+/* 
 .socials > img {
   object-fit: contain;
+} */
+
+.footerSocialContact i {
+  padding: 0;
 }
 
-.footerSocialContact i:hover {
-  border: 2px solid transparent;
-}
+/* .footerSocialContact i:hover { */
+/* border: 2px solid transparent;//why this ?? */
+/* } */
 
 .footerNavLink li {
-  padding-bottom: 24px;
+  /* padding-bottom: 24px; */
+  padding: 5px;
 }
 
 .footerCatLink li {
-  padding-bottom: 3px;
+  /* padding-bottom: 3px; */
+  padding: 5px;
 }
 
-h2 {
-  font-weight: bold;
+/* h2 { */
+.footerContainer h2 {
+  /* font-weight: bold; */
+  font-weight: 600;
   text-decoration: underline;
   text-underline-position: under;
-  font-size: 22px;
-  padding-bottom: 16px;
+  /* font-size: 22px; */
+  font-size: 20px;
+  /* padding-bottom: 16px; */
+  padding-bottom: 5px;
 }
-
+ /* The contact heading is a h2 so it will still use the style above */
+/* 
 .contactHeading {
-  font-weight: bolder;
+  /* font-weight: bolder; * /
+  font-weight: 600;
   text-decoration: underline;
   text-align: center;
-}
+} */
 
-ul {
+/* ul { */
+.footerContainer ul {
   list-style-type: none;
-  padding-inline: unset;
-  padding-left: unset;
+  /* padding-inline: unset;
+  padding-left: unset; */
+  margin: 0;
+  padding: 0;
 }
 
 .textLink {
   color: white;
-  font-weight: 600;
+  /* font-weight: 600; */
+  font-weight: 400;
   text-decoration: none;
 }
 
@@ -102,7 +122,7 @@ ul {
   margin-right: 8px;
 }
 
-.inputContactEmail input[type="button"] {
+.inputContactEmail input[type='button'] {
   color: white;
   font-family: Istok Web;
   font-style: normal;
@@ -112,16 +132,19 @@ ul {
 }
 
 .footerBottom {
-  text-align: center;
-  border-top: 1px solid rgb(214, 211, 205);
+  /* text-align: center; // you have given it a text center bootstrap class */
+  /* border-top: 1px solid rgb(214, 211, 205); */
+  border-top: 1px solid rgba(255, 255, 255, 0.515);
   width: 100%;
-  font-weight: bolder;
-  font-size: 22px;
-  background-color: var(--main-blue);
+  /* font-weight: bolder; */
+  /* font-size: 22px; */
+  font-size: 10px;
+  /* background-color: var(--main-blue);// the footer color covers all */
 }
 
-.footerBottomText {
-  text-decoration: underline;
-  text-underline-position: under;
-  color: rgb(214, 211, 205);
-}
+/* .footerBottomText { */
+/* text-decoration: underline;
+  text-underline-position: under; // i dont think if they is a need */
+/* color: rgb(214, 211, 205);  */
+/* color: rgb(255, 255, 255); */
+/* } */
