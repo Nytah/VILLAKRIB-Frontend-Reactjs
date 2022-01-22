@@ -24,10 +24,13 @@ import searchData from "../../assets/json/searchData";
 const HomePage = () => {
   const [searchDataState] = useState(searchData);
   const { minPrices, maxPrices, type } = searchDataState;
-  console.log("minPrices -->", minPrices);
-  console.log("maxPrices -->", maxPrices);
+  // console.log("minPrices -->", minPrices);
+  // console.log("maxPrices -->", maxPrices);
   console.log("type -->", type);
-
+  type.map((type, index) => {
+    // return <option key={index}>{price}</option>;
+    console.log(type.lable);
+  });
   return (
     <>
       <div className="top-nav">
@@ -60,31 +63,40 @@ const HomePage = () => {
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="test"
+                  placeholder="Location of Search..."
                 />
               </div>
               <div className="col-md-2 col-sm-2">
                 <select className="form-select">
-                  <option value="">test</option>
-                  <option value="">test</option>
-                  <option value="">test</option>
-                  <option value="">test</option>
+                  <option value="" disabled selected hidden>
+                    Type
+                  </option>
+
+                  {type.map((type, index) => {
+                    
+                    return <option key={index}>{type.lable}</option>;
+                    // console.log(type.label);
+                  })}
                 </select>
               </div>
               <div className="col-md-2 col-sm-2">
                 <select className="form-select">
-                  <option value="">test</option>
-                  <option value="">test</option>
-                  <option value="">test</option>
-                  <option value="">test</option>
+                  <option value="" disabled selected hidden>
+                    Min Price
+                  </option>
+                  {minPrices.map((price, index) => {
+                    return <option key={index}>{price}</option>;
+                  })}
                 </select>
               </div>
               <div className="col-md-2 col-sm-2">
                 <select className="form-select">
-                  <option value="">test</option>
-                  <option value="">test</option>
-                  <option value="">test</option>
-                  <option value="">test</option>
+                  <option value="" disabled selected hidden>
+                    Max Price
+                  </option>
+                  {maxPrices.map((price, index) => {
+                    return <option key={index}>{price}</option>;
+                  })}
                 </select>
               </div>
               <div className="col-md-2 col-sm-2 ">
