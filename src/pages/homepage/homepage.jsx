@@ -59,6 +59,15 @@ const HomePage = () => {
           <h1 className="text-center text-white">Search Your Next Home</h1>
           <div className="container">
             <div className="row">
+              <div className="col-4 filter-div">
+                <div className="d-felx justifiy-content-around">
+                  <button className="btn-primary btn">Buy</button>
+                  <button className="btn-primary btn">Sell</button>
+                  <button className="btn-primary btn">Rent</button>
+                </div>
+              </div>
+            </div>
+            <div className="row">
               <div className="col-md-4 col-sm-4">
                 <input
                   type="text"
@@ -73,7 +82,6 @@ const HomePage = () => {
                   </option>
 
                   {type.map((type, index) => {
-                    
                     return <option key={index}>{type.lable}</option>;
                     // console.log(type.label);
                   })}
