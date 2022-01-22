@@ -18,6 +18,7 @@ import playstore from "../../assets/images/playstore.png";
 import appstore from "../../assets/images/appstore.png";
 import mobileAppImage from "../../assets/images/villakrib_app_phone.png";
 import FooterComponent from "../../components/footer/footer.component";
+import { minPrices, maxPrices } from "./prices";
 
 const HomePage = () => {
   return (
@@ -27,6 +28,7 @@ const HomePage = () => {
       </div>
 
       {/*<ReactCarousel /> */}
+
 
       <section className="hero-section">
         <div className="hearo-div">
@@ -44,6 +46,94 @@ const HomePage = () => {
           </div> */}
         </div>
       </section>
+
+      {/*Search Area*/}
+      <div className="search">
+          <div className="firstHeader">
+            <h1>Search Your Next Home</h1>
+          </div>
+          <div className="searchArea">
+            <div className="buttons">
+              <button>Buy</button>
+              <button>Sell</button>
+              <button>Rent</button>
+            </div>
+            
+            <div className="keyInputs">
+              <div className="inputs">
+                <div className="input">
+                  <input type="text" placeholder="Location of Search...." />
+                </div>
+
+                <div className="type">
+                  <select>
+                    <option value="" disabled selected hidden>Type</option>
+                    <optgroup label="Rent">
+                      <option>Self contain</option>
+                      <option>1 bed room</option>
+                      <option>2 bed room</option>
+                      <option>3 bed room</option>
+                      <option>Appartment</option>
+                      <option>Store</option>
+                      <option>Warehouse</option>
+                      <option>Bungalow</option>
+                      <option>Duplex</option>
+                    </optgroup> 
+                    <optgroup label="Buy">
+                      <option>Duplex</option>
+                      <option>Bungalow</option>
+                      <option>House</option>
+                      <option>Land</option>
+                      <option>Estate</option>
+                      <option>Store</option>
+                      <option>Warehouse</option>
+                    </optgroup>
+                    <optgroup label="Sell">
+                      <option>Duplex</option>
+                      <option>Bungalow</option>
+                      <option>House</option>
+                      <option>Land</option>
+                      <option>Estate</option>
+                      <option>Store</option>
+                      <option>Warehouse</option>
+                    </optgroup>
+                    <optgroup label="Invest">
+                      <option>Land</option>
+                      <option>Property</option>
+                      <option>Housing</option>
+                    </optgroup>
+                    </select>
+                </div>
+
+                <div className="minPrice">
+                  <select name="" id="">
+                    <option value="" disabled selected hidden>Min Price</option>
+                    {minPrices.map((price, index)=>{
+                    return <option key={index}>{price}</option>
+                    })}
+                  </select>
+                </div>
+
+                <div className="maxPrice">
+                  <select name="" id="">
+                    <option value="" disabled selected hidden>Max Price</option>
+                    {maxPrices.map((price, index)=>{
+                    return <option key={index}>{price}</option>
+                    })}
+                  </select>
+                </div>
+
+              </div>
+
+              <div className="searchButton">
+                <button>Search</button>
+              </div>
+
+            </div>
+          </div>
+
+      </div>
+
 
       {/* let us walk you home  section */}
       <div className="container walk-home-section">
