@@ -11,3 +11,8 @@
   align-content: center;
   align-items: center;
 }
+
+.agentCard {
+  padding: 0px;
+  margin: 0px;
+}

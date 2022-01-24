@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import AgentPic from '../agentPic/agentPic.component';
+import AgentPic from '../agentPic.component.jsx/agentPic.component';
 import AgentCard from '../agentCard/agentCard.component';
 import { agentData } from '../../assets/json/imageData';
 import "./featuredAgents.style.css";
@@ -44,7 +44,7 @@ const FeaturedAgents = () => {
         <AgentPic image={agentData.agent12.image} />
         <AgentPic image={agentData.agent13.image} />
      </div>
-     <div>
+     <div className='agentCard'>
        <AgentCard name={agentName} location={agentLocation} image={profileImage}/>
      </div>
     </div>
