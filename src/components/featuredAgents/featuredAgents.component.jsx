@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import AgentPic from '../agentPic/agentPic.component';
 import AgentCard from '../agentCard/agentCard.component';
 import { agentData } from '../../assets/json/imageData';
@@ -7,9 +7,29 @@ import "./featuredAgents.style.css";
 
 
 const FeaturedAgents = () => {
+
+  const [active, setActive] = useState(false);
+  const [agentName, setAgentName] = useState("");
+  const [agentLocation, setAgentLocation] = useState("");
+  const [profileImage, setProfileImage] = useState();
+
+  const handleName = (agentInfo) => {
+   setAgentName(agentInfo.name);
+   handleLocation(agentData.agent1);
+  }
+
+  const handleLocation = (agentInfo) => {
+    setAgentLocation(agentInfo.location);
+    handleImage(agentData.agent1)
+   }
+
+   const handleImage = (agentInfo) => {
+    return setProfileImage(agentInfo.image);
+   }
+
   return ( 
     <div className='featuredAgents'>
-     <div className="agentPictures">
+     <div onClick={() => {handleName(agentData.agent1)}} image={agentData.agent1.image} className="agentPictures">
         <AgentPic image={agentData.agent1.image} />
         <AgentPic image={agentData.agent2.image} />
         <AgentPic image={agentData.agent3.image} />
@@ -23,6 +43,9 @@ const FeaturedAgents = () => {
         <AgentPic image={agentData.agent11.image} />
         <AgentPic image={agentData.agent12.image} />
         <AgentPic image={agentData.agent13.image} />
+     </div>
+     <div>
+       <AgentCard name={agentName} location={agentLocation} image={profileImage}/>
      </div>
     </div>
    );
