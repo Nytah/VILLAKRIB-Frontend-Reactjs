@@ -1,11 +1,12 @@
 import React from 'react';
+import { agentData } from '../../assets/json/imageData';
 
-const AgentPic = () => {
+const AgentPic = ({image}) => {
   return ( 
-    <div>
-      
+    <div className='agentPic'>
+      <img src={image} alt="" />
     </div>
    );
 }
  
-export default AgentPic;
+export default AgentPic;  

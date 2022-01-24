@@ -19,6 +19,8 @@ import appstore from "../../assets/images/appstore.png";
 import mobileAppImage from "../../assets/images/villakrib_app_phone.png";
 import FooterComponent from "../../components/footer/footer.component";
 import { minPrices, maxPrices } from "./prices";
+import FeaturedAgents from "../../components/featuredAgents/featuredAgents.component";
+
 
 const HomePage = () => {
   return (
@@ -191,6 +193,9 @@ const HomePage = () => {
           name="John Doe"
         />
       </div>
+      
+      <FeaturedAgents />
+
       <section className="blog-section">
         <div className="image-behaind-text-div">
           <img src={houseImage} alt="" />
