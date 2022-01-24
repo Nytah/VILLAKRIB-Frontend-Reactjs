@@ -1,4 +1,5 @@
 import React from 'react';
+import "./agentPic.style.css";
 import { agentData } from '../../assets/json/imageData';
 
 const AgentPic = ({image}) => {
