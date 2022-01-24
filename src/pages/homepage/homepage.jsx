@@ -59,7 +59,7 @@ const HomePage = () => {
           <h1 className="text-center text-white">Search Your Next Home</h1>
           <div className="container">
             <div className="row">
-              <div className="col-4 filter-div">
+              <div className="col-12 col-md-12 filter-div">
                 <div className="d-felx justifiy-content-around">
                   <button className="btn-primary btn">Buy</button>
                   <button className="btn-primary btn">Sell</button>

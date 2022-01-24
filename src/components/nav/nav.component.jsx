@@ -167,10 +167,14 @@ const NavComponent = () => {
           </div>
         </div>
       </div>
+      <input type="checkbox" name="" id="menu-toggle" />
       <div id="nav">
         <div className="logo-div">
           <img src={logoImg} alt="" />
         </div>
+        <label htmlFor="menu-toggle" className="menu-icon-div">
+          <div className="bar"></div>
+        </label>
         <div className="link-div">
           <ul>
             <li>
@@ -179,55 +183,87 @@ const NavComponent = () => {
             <li>
               <Link to="">Properties</Link>
               <div className="subMenuOne">
-                <ul id="bb1">
-                  <li><Link to="">Image Library</Link></li>
-                  <li><Link to="">Add Listings</Link></li>
+                <ul>
+                  <li>
+                    <Link to="">Image Library</Link>
+                  </li>
+                  <li>
+                    <Link to="">Add Listings</Link>
+                  </li>
                 </ul>
               </div>
             </li>
             <li>
               <Link to="">Aid</Link>
               <div className="subMenuOne">
-                <ul id="bb2">
-                  <li><Link to="">Blog</Link></li>
-                  <li><Link to="">Cost Calculator</Link></li>
-                  <li><Link to="">Scheduling</Link></li>
+                <ul>
+                  <li>
+                    <Link to="">Blog</Link>
+                  </li>
+                  <li>
+                    <Link to="">Cost Calculator</Link>
+                  </li>
+                  <li>
+                    <Link to="">Scheduling</Link>
+                  </li>
                 </ul>
               </div>
             </li>
             <li>
               <Link to="">Guide</Link>
               <div className="subMenuOne">
-                <ul id="bb3">
-                  <li><Link to="">Update Profile</Link></li>
-                  <li className="hoverOne"><Link to="">Find Agents</Link>
+                <ul>
+                  <li>
+                    <Link to="">Update Profile</Link>
+                  </li>
+                  <li className="hoverOne">
+                    <Link to="">Find Agents</Link>
                     <div className="subMenuTwo">
                       <ul>
-                        <li className="hoverTwo"><Link to="">Contact</Link>
+                        <li className="hoverTwo">
+                          <Link to="">Contact</Link>
                           <div className="subMenuThree">
                             <ul>
-                              <li><Link to="">Call</Link></li>
-                              <li><Link to="">Chat</Link></li>
-                              <li><Link to="">Push Notification</Link></li>
+                              <li>
+                                <Link to="">Call</Link>
+                              </li>
+                              <li>
+                                <Link to="">Chat</Link>
+                              </li>
+                              <li>
+                                <Link to="">Push Notification</Link>
+                              </li>
                             </ul>
                           </div>
                         </li>
                       </ul>
                     </div>
                   </li>
-                  <li><Link to="">Find Sellers</Link></li>
-                  <li><Link to="">Find Buyers</Link></li>
-                  <li><Link to="">Find Investors</Link></li>
-                  <li><Link to="">Advisory</Link></li>
+                  <li>
+                    <Link to="">Find Sellers</Link>
+                  </li>
+                  <li>
+                    <Link to="">Find Buyers</Link>
+                  </li>
+                  <li>
+                    <Link to="">Find Investors</Link>
+                  </li>
+                  <li>
+                    <Link to="">Advisory</Link>
+                  </li>
                 </ul>
               </div>
             </li>
             <li>
               <Link to="">About Us</Link>
               <div className="subMenuOne">
-                <ul id="bb4">
-                  <li><Link to="">Team</Link></li>
-                  <li><Link to="">Career</Link></li>
+                <ul>
+                  <li>
+                    <Link to="">Team</Link>
+                  </li>
+                  <li>
+                    <Link to="">Career</Link>
+                  </li>
                 </ul>
               </div>
             </li>
