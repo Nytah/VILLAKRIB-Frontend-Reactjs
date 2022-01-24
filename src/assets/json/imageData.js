@@ -80,7 +80,7 @@ export const PropertyListingsImage = [
 export const agentData = {
     agent1: {
       name: "Louis Vuitton",
-      location: "Kaduna State",
+      location: "Kaduna State Nigeria",
       value: "10 mill",
       image: Agent01,
       facebook: "",
@@ -89,8 +89,8 @@ export const agentData = {
       email: ""
     },
     agent2: {
-        name: "Louis Vuitton",
-        location: "Kaduna State",
+        name: "Precious Anyanwu",
+        location: " Enugu State, Nigeria",
         value: "10 mill",
         image: Agent02,
         facebook: "",
@@ -99,8 +99,8 @@ export const agentData = {
         email: ""
     },
     agent3: {
-        name: "Louis Vuitton",
-        location: "Kaduna State",
+        name: "Miracle Andrade",
+        location: "Lagos State, Nigeria",
         value: "10 mill",
         image: Agent03,
         facebook: "",

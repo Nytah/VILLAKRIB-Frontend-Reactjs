@@ -15,12 +15,12 @@ const FeaturedAgents = () => {
 
   const handleName = (agentInfo) => {
    setAgentName(agentInfo.name);
-   handleLocation(agentData.agent1);
+   handleLocation(agentInfo);
   }
 
   const handleLocation = (agentInfo) => {
     setAgentLocation(agentInfo.location);
-    handleImage(agentData.agent1)
+    handleImage(agentInfo)
    }
 
    const handleImage = (agentInfo) => {
@@ -29,20 +29,20 @@ const FeaturedAgents = () => {
 
   return ( 
     <div className='featuredAgents'>
-     <div onClick={() => {handleName(agentData.agent1)}} image={agentData.agent1.image} className="agentPictures">
-        <AgentPic image={agentData.agent1.image} />
-        <AgentPic image={agentData.agent2.image} />
-        <AgentPic image={agentData.agent3.image} />
-        <AgentPic image={agentData.agent4.image} />
-        <AgentPic image={agentData.agent5.image} />
-        <AgentPic image={agentData.agent6.image} />
-        <AgentPic image={agentData.agent7.image} />
-        <AgentPic image={agentData.agent8.image} />
-        <AgentPic image={agentData.agent9.image} />
-        <AgentPic image={agentData.agent10.image} />
-        <AgentPic image={agentData.agent11.image} />
-        <AgentPic image={agentData.agent12.image} />
-        <AgentPic image={agentData.agent13.image} />
+     <div image={agentData.agent1.image} className="agentPictures">
+      <div  onClick={() => {handleName(agentData.agent1)}}><AgentPic image={agentData.agent1.image} /></div>
+      <div  onClick={() => {handleName(agentData.agent2)}}><AgentPic image={agentData.agent2.image} /></div>
+      <div  onClick={() => {handleName(agentData.agent3)}}><AgentPic image={agentData.agent3.image} /></div>
+      <div  onClick={() => {handleName(agentData.agent4)}}><AgentPic image={agentData.agent4.image} /></div>
+      <div  onClick={() => {handleName(agentData.agent5)}}><AgentPic image={agentData.agent5.image} /></div>
+      <div  onClick={() => {handleName(agentData.agent6)}}><AgentPic image={agentData.agent6.image} /></div>
+      <div  onClick={() => {handleName(agentData.agent7)}}><AgentPic image={agentData.agent7.image} /></div>
+      <div  onClick={() => {handleName(agentData.agent8)}}><AgentPic image={agentData.agent8.image} /></div>
+      <div  onClick={() => {handleName(agentData.agent9)}}><AgentPic image={agentData.agent9.image} /></div>
+      <div  onClick={() => {handleName(agentData.agent10)}}><AgentPic image={agentData.agent10.image} /></div>
+      <div  onClick={() => {handleName(agentData.agent11)}}><AgentPic image={agentData.agent11.image} /></div>
+      <div  onClick={() => {handleName(agentData.agent12)}}><AgentPic image={agentData.agent12.image} /></div>
+      <div  onClick={() => {handleName(agentData.agent13)}}><AgentPic image={agentData.agent13.image} /></div>
      </div>
      <div className='agentCard'>
        <AgentCard name={agentName} location={agentLocation} image={profileImage}/>
