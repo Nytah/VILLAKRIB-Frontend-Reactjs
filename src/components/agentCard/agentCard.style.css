@@ -25,6 +25,8 @@
   border: none;
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .picName {
@@ -53,18 +55,22 @@
 .locationDetails {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
-  margin-left: -120px;
+  padding: 0 0 0 198px;
 }
 
-.locationDetails > img {
+.locationDetails > .img {
+  z-index: 100;
+  display: inline-flex;
+}
+
+.locationDetails > .img > img {
   object-fit: contain;
   width: 31.13px;
   height: 28px;
 }
 
-.locationDetails > p {
+.locationDetails > .para > p {
   padding: 10px;
   margin-top: 8px;
 

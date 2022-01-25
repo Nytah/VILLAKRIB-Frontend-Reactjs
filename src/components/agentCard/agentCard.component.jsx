@@ -19,8 +19,12 @@ const AgentCard = ({name, location, image}) => {
           <p>{name}</p>
         </div>
         <div className="locationDetails">
-          <img src={vector} alt="" />
-          <p>{location}</p>
+          <div className="img">
+            <img src={vector} alt="" />
+          </div>
+          <div className="para">
+            <p>{location}</p>
+          </div>
         </div>
         
         <div className="socialDetails">
