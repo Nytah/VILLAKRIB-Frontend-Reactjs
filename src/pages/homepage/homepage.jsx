@@ -20,17 +20,19 @@ import mobileAppImage from "../../assets/images/villakrib_app_phone.png";
 import FooterComponent from "../../components/footer/footer.component";
 // import { minPrices, maxPrices } from "../../assets/json/pricessets/json/prices";
 import searchData from "../../assets/json/searchData";
+import axios from "axios";
 
 const HomePage = () => {
   const [searchDataState] = useState(searchData);
   const { minPrices, maxPrices, type } = searchDataState;
   // console.log("minPrices -->", minPrices);
   // console.log("maxPrices -->", maxPrices);
-  console.log("type -->", type);
-  type.map((type, index) => {
-    // return <option key={index}>{price}</option>;
-    console.log(type.lable);
-  });
+  // console.log("type -->", type);
+  // type.map((type, index) => {
+  //   // return <option key={index}>{price}</option>;
+  //   console.log(type.lable);
+  // });
+
   return (
     <>
       <div className="top-nav">
