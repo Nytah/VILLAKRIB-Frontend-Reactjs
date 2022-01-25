@@ -1,9 +1,68 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logoImg from "../../assets/images/logo.png";
 import "./nav.style.css";
 
+// function LoginApi() {
+//   (async () => {
+//     const rawResponse = await fetch("https://vilakrib.herokuapp.com", {
+//       method: "POST",
+//       headers: {
+//         Accept: "application/json",
+//         "Content-Type": "application/json",
+//       },
+//       body: JSON.stringify({
+//         email: "test@email.com",
+//         password: "0704",
+//       }),
+//     });
+//     const content = await rawResponse.json();
+
+//     console.log(content);
+//   })();
+// }
+
 const NavComponent = () => {
+  // LoginApi();
+  const [loginState, SetLoginState] = useState({
+    email: "",
+    password: "",
+  });
+
+  const sendLoginDetailsToServer = async (FormData) => {
+    console.log("send to API-->", FormData);
+    const rawResponse = await fetch(
+      "https://vilakrib.herokuapp.com/gateway/login/",
+      {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(FormData),
+      }
+    );
+    const content = await rawResponse.json();
+
+    console.log(content);
+  };
+
+  const handleLoginSubmitClick = (e) => {
+    e.preventDefault();
+    sendLoginDetailsToServer(loginState);
+    SetLoginState({
+      email: "",
+      password: "",
+    });
+  };
+
+  const handleLoginInputChange = (e) => {
+    const { id, value } = e.target;
+    SetLoginState((prevState) => ({
+      ...prevState,
+      [id]: value,
+    }));
+  };
   return (
     <>
       {/* <!-- The Modal --> */}
@@ -57,14 +116,26 @@ const NavComponent = () => {
                     <div className="icon-div text-center">
                       <i class="bi bi-person-circle"></i>
                     </div>
-                    <form action="">
+                    <form action="" onSubmit={handleLoginSubmitClick}>
                       <div className="input-div">
                         <span>Email:</span>
-                        <input type="email" placeholder="you@email.com" />
+                        <input
+                          type="email"
+                          placeholder="you@email.com"
+                          value={loginState.email}
+                          id="email"
+                          onChange={handleLoginInputChange}
+                        />
                       </div>
                       <div className="input-div">
                         <span>Password:</span>
-                        <input type="password" placeholder="**********" />
+                        <input
+                          type="password"
+                          placeholder="**********"
+                          value={loginState.password}
+                          id="password"
+                          onChange={handleLoginInputChange}
+                        />
                       </div>
                       <div className="input-div">
                         <div className="d-flex justify-content-between m-3">
@@ -76,7 +147,7 @@ const NavComponent = () => {
                         </div>
                       </div>
                       <div className="input-div">
-                        <input type="button" value="Submit" />
+                        <input type="submit" value="Submit" />
                       </div>
                       <div className="or-diver d-flex justify-content-around mt-3">
                         <hr />
