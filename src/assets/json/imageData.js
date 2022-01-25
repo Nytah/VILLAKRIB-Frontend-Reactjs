@@ -79,9 +79,8 @@ export const PropertyListingsImage = [
 
 export const agentData = {
     agent1: {
-      name: "Louis Vuitton",
+      name: "Agatha Phillips",
       location: "Kaduna State Nigeria",
-      value: "10 mill",
       image: Agent01,
       facebook: "",
       instagram: "",
@@ -91,7 +90,6 @@ export const agentData = {
     agent2: {
         name: "Precious Anyanwu",
         location: " Enugu State, Nigeria",
-        value: "10 mill",
         image: Agent02,
         facebook: "",
         instagram: "",
@@ -99,9 +97,8 @@ export const agentData = {
         email: ""
     },
     agent3: {
-        name: "Miracle Andrade",
-        location: "Lagos State, Nigeria",
-        value: "10 mill",
+        name: "Preye Tamunotonye",
+        location: "Port Harcourt. Rivers state",
         image: Agent03,
         facebook: "",
         instagram: "",
@@ -110,8 +107,7 @@ export const agentData = {
       },
       agent4: {
         name: "Louis Vuitton",
-        location: "Kaduna State",
-        value: "10 mill",
+        location: "Lagos State, Nigeria",
         image: Agent04,
         facebook: "",
         instagram: "",
@@ -119,9 +115,8 @@ export const agentData = {
         email: ""
       },
       agent5: {
-        name: "Louis Vuitton",
-        location: "Kaduna State",
-        value: "10 mill",
+        name: "Faith Livingstone",
+        location: "Kaduna State, Nigeria",
         image: Agent05,
         facebook: "",
         instagram: "",
@@ -129,9 +124,8 @@ export const agentData = {
         email: ""
       },
       agent6: {
-        name: "Louis Vuitton",
-        location: "Kaduna State",
-        value: "10 mill",
+        name: "Faith Livingstone",
+        location: "Kaduna State, Nigeria",
         image: Agent06,
         facebook: "",
         instagram: "",
@@ -139,9 +133,8 @@ export const agentData = {
         email: ""
       },
       agent7: {
-        name: "Louis Vuitton",
-        location: "Kaduna State",
-        value: "10 mill",
+        name: "Faith Livingstone",
+        location: "Kaduna State, Nigeria",
         image: Agent07,
         facebook: "",
         instagram: "",
@@ -149,9 +142,8 @@ export const agentData = {
         email: ""
       },
       agent8: {
-        name: "Louis Vuitton",
-        location: "Kaduna State",
-        value: "10 mill",
+        name: "Faith Livingstone",
+        location: "Kaduna State, Nigeria",
         image: Agent08,
         facebook: "",
         instagram: "",
@@ -160,8 +152,7 @@ export const agentData = {
       },
       agent9: {
         name: "Louis Vuitton",
-        location: "Kaduna State",
-        value: "10 mill",
+        location: "Kaduna State, Nigeria",
         image: Agent09,
         facebook: "",
         instagram: "",
@@ -169,9 +160,8 @@ export const agentData = {
         email: ""
       },
       agent10: {
-        name: "Louis Vuitton",
-        location: "Kaduna State",
-        value: "10 mill",
+        name: "Faith Livingstone",
+        location: "Kaduna State, Nigeria",
         image: Agent10,
         facebook: "",
         instagram: "",
@@ -179,9 +169,8 @@ export const agentData = {
         email: ""
       },
       agent11: {
-        name: "Louis Vuitton",
-        location: "Kaduna State",
-        value: "10 mill",
+        name: "Faith Livingstone",
+        location: "Kaduna State, Nigeria",
         image: Agent11,
         facebook: "",
         instagram: "",
@@ -189,9 +178,8 @@ export const agentData = {
         email: ""
       },
       agent12: {
-        name: "Louis Vuitton",
-        location: "Kaduna State",
-        value: "10 mill",
+        name: "Faith Livingstone",
+        location: "Kaduna State, Nigeria",
         image: Agent12,
         facebook: "",
         instagram: "",
@@ -199,9 +187,8 @@ export const agentData = {
         email: ""
       },
       agent13: {
-        name: "Louis Vuitton",
-        location: "Kaduna State",
-        value: "10 mill",
+        name: "Lauren Jones",
+        location: "Kaduna State, Nigeria",
         image: Agent13,
         facebook: "",
         instagram: "",
