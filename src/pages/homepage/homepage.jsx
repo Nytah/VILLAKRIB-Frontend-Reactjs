@@ -18,9 +18,12 @@ import playstore from "../../assets/images/playstore.png";
 import appstore from "../../assets/images/appstore.png";
 import mobileAppImage from "../../assets/images/villakrib_app_phone.png";
 import FooterComponent from "../../components/footer/footer.component";
+import { minPrices, maxPrices } from "./prices";
+import FeaturedAgents from "../../components/featuredAgents/featuredAgents.component";
 // import { minPrices, maxPrices } from "../../assets/json/pricessets/json/prices";
 import searchData from "../../assets/json/searchData";
 import axios from "axios";
+
 
 const HomePage = () => {
   const [searchDataState] = useState(searchData);
@@ -249,7 +252,7 @@ const HomePage = () => {
 
         <h1 className="header-text">Our Featured Agents</h1>
       </div>
-      <div className="featuredAgent">
+      {/* <div className="featuredAgent">
         <FeaturedAgent
           image={Agent1}
           location="Gwagwalada, Abuja"
@@ -265,7 +268,10 @@ const HomePage = () => {
           location="Gwagwalada, Abuja"
           name="John Doe"
         />
-      </div>
+      </div> */}
+      
+      <FeaturedAgents />
+
       <section className="blog-section">
         <div className="image-behaind-text-div">
           <img src={houseImage} alt="" />
