@@ -176,7 +176,7 @@ const HomePage = () => {
 
         <h1 className="header-text">Our Featured Agents</h1>
       </div>
-      <div className="featuredAgent">
+      {/* <div className="featuredAgent">
         <FeaturedAgent
           image={Agent1}
           location="Gwagwalada, Abuja"
@@ -192,7 +192,7 @@ const HomePage = () => {
           location="Gwagwalada, Abuja"
           name="John Doe"
         />
-      </div>
+      </div> */}
       
       <FeaturedAgents />
 
