@@ -24,15 +24,19 @@ import "./nav.style.css";
 
 const NavComponent = () => {
   // LoginApi();
+  // loading state
   const [loadingState, setLoadingState] = useState(false);
+  // error message
   const [errorMessage, setErrorMessage] = useState({
     status: false,
     errorMessage: "errorMessage state",
   });
+  // success message
   const [successMessage, setSuccessMessage] = useState({
     status: false,
     successMessage: "successMessage state",
   });
+  // login form input state
   const [loginInputState, SetLoginInputState] = useState({
     email: "",
     password: "",
