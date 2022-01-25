@@ -3,20 +3,20 @@ import React from "react";
 import { Linkedin, Facebook, Instagram, Envelope } from "react-bootstrap-icons";
 import "./socialIcon.style.css";
 
-const SocialIcon = ({ iconClass, iconContainerClass }) => {
+const SocialIcon = ({ iconClass }) => {
   return (
     <>
-      <div className={["socialIcon", iconContainerClass].join(" ")}>
-        <a href="#">
+      <div className="socialIcon">
+        <a href="/">
           <Linkedin className={iconClass} size={30} />
         </a>
-        <a href="#">
+        <a href="/">
           <Facebook className={iconClass} size={30} />
         </a>
-        <a href="#">
+        <a href="/">
           <Instagram className={iconClass} size={30} />
         </a>
-        <a href="#">
+        <a href="/">
           <Envelope className={iconClass} size={30} />
         </a>
       </div>
@@ -25,7 +25,6 @@ const SocialIcon = ({ iconClass, iconContainerClass }) => {
 };
 
 SocialIcon.color = {
-  iconContainerClass: "",
   iconClass: "",
 };
 
