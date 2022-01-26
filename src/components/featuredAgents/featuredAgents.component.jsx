@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import AgentPic from '../agentPic.component.jsx/agentPic.component';
+import AgentPic from '../agentPic/agentPic.component';
 import AgentCard from '../agentCard/agentCard.component';
 import { agentData } from '../../assets/json/imageData';
 import "./featuredAgents.style.css";
