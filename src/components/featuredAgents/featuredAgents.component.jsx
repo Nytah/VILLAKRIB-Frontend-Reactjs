@@ -138,11 +138,16 @@ const FeaturedAgents = () => {
       </div>
       {active && (
         <div className="agentCard">
-          <AgentCard
-            name={agentName}
-            location={agentLocation}
-            image={profileImage}
-          />
+          <>
+            <AgentCard
+              name={agentName}
+              location={agentLocation}
+              image={profileImage}
+            />
+            <div onClick={() => setActive(false)} className="close-agent-card">
+              <i className="bi bi-arrow-right-square-fill"></i>
+            </div>
+          </>
         </div>
       )}
     </div>
