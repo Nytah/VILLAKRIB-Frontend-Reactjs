@@ -16,7 +16,7 @@
   width: 130px;
 }
 .footerLogoText {
-  font-family: Istok Web;
+  /* font-family: Istok Web;/ */
   font-style: normal;
   font-size: 20px;
 }
@@ -101,9 +101,9 @@ ul {
   margin-right: 8px;
 }
 
-.inputContactEmail input[type="button"] {
+.inputContactEmail input[type='button'] {
   color: white;
-  font-family: Istok Web;
+  /* font-family: Istok Web; */
   font-style: normal;
   background-color: #dc3545;
   font-weight: bold;
@@ -127,7 +127,7 @@ ul {
 
 .col-md-4 > .flex-row > .btn {
   border-radius: 0px 18px 0px 0px;
-  font-family: Istok Web;
+  /* font-family: Istok Web; */
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -143,8 +143,8 @@ ul {
 
 /* .thirdSection {
   border-left: 1px solid white;
-  height: 300px;
-  padding-left: 20px;
+  height: 300px; 
+  padding-left: 20px; 
 } */
 
 .secondPart {
