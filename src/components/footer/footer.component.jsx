@@ -102,7 +102,7 @@ const FooterComponent = ({}) => {
             </div>
           </Col>
           <Col className="col-md-4 footerContainer-p">
-              {/* <div className="thirdSection"> */}
+              <div className="thirdSection">
                 <h2 className="contactHeading">Subscribe</h2>
                 <p className="footerLogoText">
                   Receive updates, hot deals, tutorials, discounts sent straight
@@ -119,7 +119,7 @@ const FooterComponent = ({}) => {
                     value="Subscribe"
                     className="btn btn-danger ml-4 py-2"
                   />
-                {/* </div> */}
+                </div>
               </div>
           </Col>
         </Row>

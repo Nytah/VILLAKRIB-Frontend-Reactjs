@@ -153,5 +153,12 @@ ul {
 }
 
 .thirdPart {
-  border-right: 1px solid white;
+  padding-right: 0px;
+  margin-right: 0px;
+}
+
+.thirdSection {
+  border-left: 1px solid white;
+  padding-left: 20px;
+  height: 320px;
 }
