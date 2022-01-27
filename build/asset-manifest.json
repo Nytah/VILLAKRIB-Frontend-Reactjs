@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0f60a869.css",
+    "main.js": "/static/js/main.fcc6daf8.js",
+    "static/js/787.0401957a.chunk.js": "/static/js/787.0401957a.chunk.js",
+    "static/media/slide1.jpg": "/static/media/slide1.c07ce72f661fae30269b.jpg",
+    "static/media/slide3.jpg": "/static/media/slide3.157334b1b892b78a33a1.jpg",
+    "static/media/slide2.jpg": "/static/media/slide2.505a94d3aa5eb45a1b72.jpg",
+    "static/media/1.jpeg": "/static/media/1.ecfc2dfc7a5a3e997332.jpeg",
+    "static/media/agentsBackground.png": "/static/media/agentsBackground.347d67c04e2a3b316fed.png",
+    "static/media/villakrib_app_phone.png": "/static/media/villakrib_app_phone.67bb40f7aa518182b41a.png",
+    "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.38c4d2499557ae0379fd.woff",
+    "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.2b56e79ae5013246de29.woff2",
+    "static/media/playstore.png": "/static/media/playstore.b2b1e5992a4df356334a.png",
+    "static/media/appstore.png": "/static/media/appstore.b5f7bfa3639e2f422606.png",
+    "static/media/logoImg.jpg": "/static/media/logoImg.23486d1157125a55d5ac.jpg",
+    "static/media/Agent11.png": "/static/media/Agent11.348b55e14ed5e1266bc8.png",
+    "static/media/Agent06.png": "/static/media/Agent06.02a5a2a35aa1b3939a54.png",
+    "static/media/Agent02.png": "/static/media/Agent02.b3a8c41ccb180056b743.png",
+    "static/media/Agent12.png": "/static/media/Agent12.ab24621ee4f2baaaa669.png",
+    "static/media/Agent07.png": "/static/media/Agent07.8789ad808adf2dbb5762.png",
+    "static/media/Agent03.png": "/static/media/Agent03.1650836ab0c4f74f9570.png",
+    "static/media/Agent04.png": "/static/media/Agent04.04cb54d1e7e0c465ed73.png",
+    "static/media/Agent08.png": "/static/media/Agent08.0e0dc6db40209b4cab02.png",
+    "static/media/Agent13.png": "/static/media/Agent13.4124e07b3c4e861e19c1.png",
+    "static/media/Agent10.png": "/static/media/Agent10.a3574409f5714b5e73a2.png",
+    "static/media/Agent05.png": "/static/media/Agent05.c0bf6c67b806e87beb35.png",
+    "static/media/Agent01.png": "/static/media/Agent01.0388d233d3b3874850c8.png",
+    "static/media/Agent09.png": "/static/media/Agent09.03f27ae1af06ae847f39.png",
+    "static/media/logo.png": "/static/media/logo.1e62f1fa8ee58fd878b9.png",
+    "index.html": "/index.html",
+    "main.0f60a869.css.map": "/static/css/main.0f60a869.css.map",
+    "main.fcc6daf8.js.map": "/static/js/main.fcc6daf8.js.map",
+    "787.0401957a.chunk.js.map": "/static/js/787.0401957a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0f60a869.css",
+    "static/js/main.fcc6daf8.js"
+  ]
+}
