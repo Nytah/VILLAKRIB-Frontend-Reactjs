@@ -1,0 +1,11 @@
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 50px;
+    color: rgba(124, 124, 124, 0.5);
+    cursor: pointer;
+  }
+  .back-to-top:hover {
+    color: rgb(124, 124, 124);
+  }
