@@ -47,7 +47,7 @@
 }
 
 .hero-section {
-  border: solid;
+  /* border: solid; */
   position: relative;
   height: 100vh;
   min-height: 570px;
@@ -80,14 +80,14 @@
 }
 @media screen and (max-width: 1100px) {
   .hero-section img {
-    border: solid red;
+    /* border: solid red; */
     min-width: 1040px;
     height: 570px;
   }
 }
 @media screen and (max-width: 748px) {
   .hero-section img {
-    border: solid green;
+    /* border: solid green; */
     margin-left: -100px;
   }
   .hero-section .hero-text-over-image {
@@ -101,7 +101,7 @@
 }
 @media screen and (max-width: 500px) {
   .hero-section img {
-    border: solid rgb(85, 47, 255);
+    /* border: solid rgb(85, 47, 255); */
     margin-left: -200px;
   }
   .hero-section .hero-text-over-image {
@@ -115,7 +115,7 @@
 }
 @media screen and (max-width: 400px) {
   .hero-section img {
-    border: solid rgb(229, 255, 0);
+    /* border: solid rgb(229, 255, 0); */
     margin-left: -250px;
   }
 }
@@ -496,7 +496,7 @@
     font-size: 20px;
     height: 60px;
     margin: 0 auto;
-    border: solid;
+    /* border: solid; */
   }
   .question-section .header-text {
     font-size: 30px;

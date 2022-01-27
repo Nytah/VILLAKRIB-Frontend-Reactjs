@@ -7,7 +7,7 @@ import Col from "react-bootstrap/Col";
 import SocialIcon from "../../components/socialIcon/socialIcon";
 import BackToTop from "../backToTop/backToTop.component";
 
-const FooterComponent = ({}) => {
+const FooterComponent = () => {
   return (
     <>
       <Row className="navbar-fixed-bottom">
