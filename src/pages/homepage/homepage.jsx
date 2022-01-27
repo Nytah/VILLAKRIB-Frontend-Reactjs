@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./homepage.css";
 import houseImage from "../../assets/images/slide1.jpg";
 import heroImage from "../../assets/images/slide3.jpg";
+import heroBackground from "../../assets/images/Hero-Image.png";
 import { PropertyListings } from "../../components/carousel/carousel.component";
 import NavComponent from "../../components/nav/nav.component";
 import playstore from "../../assets/images/playstore.png";
@@ -26,7 +27,7 @@ const HomePage = () => {
       {/*<ReactCarousel /> */}
       <section className="hero-section">
         <div className="hearo-div">
-          <img src={heroImage} className="w-100" alt="" />
+          <img src={heroBackground} className="w-100" alt="" />
           <div className="hero-text-over-image">
             Easy Buy, Easy Life
             <p>Down to dusk, home is best</p>
