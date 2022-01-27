@@ -1,6 +1,7 @@
 .agentCardBox {
-  width: 700px;
-  height: 600px;
+  /* border: solid; */
+  width: 400px;
+  /* height: 400px; */
   background: linear-gradient(
     180deg,
     #ffffff 0%,
@@ -10,127 +11,109 @@
   box-shadow: 0px 35px 121px rgba(10, 13, 17, 0.08);
   border: none;
   border-radius: 65px 65px 0px 0px;
-}
-
-.featuredAgentbackground {
-  position: relative;
-  width: 100%;
+  border: solid;
   overflow: hidden;
-  padding: 0px;
-  margin: 0;
-  border-radius: 65px 65px 0px 0px;
 }
-
-.lowerCardBox {
-  border: none;
+.agentCardTopImage {
+  /* border: solid; */
   width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+  height: 100px;
+  overflow: hidden;
+}
+.agentCardTopImage img {
+  /* border: solid; */
+  /* width: 100%; */
+  /* height: 200px; */
+  margin: 0 -100px;
 }
 
-.picName {
-  display: flex;
-  padding: 20px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+.col-icon-div {
+  width: 60%;
+  margin: 0 auto;
 }
-
-.picName > img {
-  border: 2px solid gray;
+.col-div .profile-image {
+  border: 5px solid var(--main-blue);
   border-radius: 50%;
-  margin: 10px;
+  width: 150px;
 }
-
-.picName > p {
-  font-size: 25px;
+.col-div p {
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
-  bottom: 0px;
-  align-self: flex-end;
-  padding: 10px;
 }
-
-.locationDetails {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0 0 0 198px;
-}
-
-.locationDetails > .img {
-  z-index: 100;
-  display: inline-flex;
-}
-
-.locationDetails > .img > img {
-  object-fit: contain;
-  width: 31.13px;
-  height: 28px;
-}
-
-.locationDetails > .para > p {
-  padding: 10px;
-  margin-top: 8px;
-
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 25px;
-  line-height: 10px;
-  color: #000000;
-}
-
-.socialDetails {
-  cursor: pointer;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 200px;
-}
-
-.contactDetails {
-  display: flex;
-  flex-direction: row;
-  margin: 10px;
-  padding: 10px 175px;
-}
-
-.emailInfo {
-  display: flex;
-  flex-direction: row;
-  background: #c4c4c4;
-  border-radius: 0 20px 0 0;
-  align-items: center;
-  padding: 0 30px;
-  margin: 0 12px;
-}
-.emailInfo > p {
-  align-items: center;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
+.col-div .fancy-button p {
   font-size: 16px;
-  line-height: 24px;
-  color: #000000;
-  margin: 8px;
+  font-weight: normal;
 }
-
-.phoneNum {
-  background: #c4c4c4;
-  border-radius: 0 20px 0 0;
-  align-items: center;
-  padding: 0 20px;
-  margin: 0 12px;
+.col-div .fancy-button i {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0 10px;
 }
-
-.phoneNum > img {
-  align-items: center;
-  justify-content: center;
-  object-fit: contain;
-  margin-top: 5px;
+.col-div .col-location-div {
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
 }
-
-.icon-blue {
-  color: var(--main-blue);
+@media screen and (max-width: 1390px) {
+  .agentCardBox {
+    /* border: solid; */
+    width: 500px;
+  }
+}
+@media screen and (max-width: 1175px) {
+  .agentCardBox {
+    width: 400px;
+    right: 10px;
+  }
+}
+@media screen and (max-width: 938px) {
+  .agentCardBox {
+    right: 5px;
+  }
+}
+@media screen and (max-width: 725px) {
+  .agentCardBox {
+    position: absolute;
+    right: 0;
+  }
+}
+@media screen and (max-width: 405px) {
+  .agentCardBox {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .col-div .profile-image {
+    border: 5px solid var(--main-blue);
+    border-radius: 50%;
+    width: 90px;
+  }
+  .agentCardTopImage {
+    height: 80px;
+  }
+}
+@media screen and (max-width: 662px) {
+  .col-div .profile-image {
+    border: 5px solid var(--main-blue);
+    border-radius: 50%;
+    width: 100px;
+  }
+}
+@media screen and (max-width: 354px) {
+  .col-div .fancy-button {
+    /* background-color: red; */
+    margin: 5px !important;
+    padding: 0px !important;
+    height: 30px;
+    min-width: 125px !important;
+  }
+}
+@media screen and (max-width: 276px) {
+  .col-div .fancy-button {
+    min-width: 80px !important;
+  }
+  .col-div .fancy-button p {
+    display: none;
+  }
 }

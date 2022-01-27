@@ -1,12 +1,47 @@
 .agentPic {
+  display: flex;
   align-items: center;
   justify-content: center;
+  /* border: solid red; */
+  /* width: 100px; */
 }
 
 .agentPic > img {
   align-content: center;
   justify-content: center;
-  padding: 10px;
+  padding: 0px;
   align-items: center;
   cursor: pointer;
+  /* width: 100px; */
+  /* border: solid; */
+  border: solid var(--main-blue);
+  border-radius: 50%;
+  width: 150px;
+}
+@media screen and (max-width: 1175px) {
+  .agentPic > img {
+    width: 130px;
+  }
+}
+@media screen and (max-width: 938px) {
+  .agentPic > img {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .agentPic > img {
+    width: 80px;
+  }
+}
+@media screen and (max-width: 661px) {
+  .agentPic > img {
+    /* padding: 5px; */
+    width: 100px;
+  }
+}
+@media screen and (max-width: 429px) {
+  .agentPic > img {
+    /* padding: 3px; */
+    width: 80px;
+  }
 }

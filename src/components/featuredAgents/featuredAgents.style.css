@@ -1,18 +1,50 @@
 .featuredAgents {
   display: flex;
+  position: relative;
+  min-height: 400px;
 }
 
 .agentPictures {
-  margin-left: 30px;
+  /* margin-left: 30px; */
   flex: 1;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   align-content: center;
   align-items: center;
 }
 
 .agentCard {
-  padding: 15px;
+  padding: 10px;
   margin: 0px;
+  /* position: relative; */
+}
+
+.close-agent-card {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 30px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0 10px;
+  margin: 0;
+}
+.close-agent-card i {
+  color: red;
+  /* background-color: #ddd; */
+}
+@media screen and (max-width: 375px) {
+  .agentPictures {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 1175px) {
+  .agentCard {
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 264px) {
+  .agentPictures {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

@@ -24,7 +24,20 @@ import "./nav.style.css";
 
 const NavComponent = () => {
   // LoginApi();
-  const [loginState, SetLoginState] = useState({
+  // loading state
+  const [loadingState, setLoadingState] = useState(false);
+  // error message
+  const [errorMessage, setErrorMessage] = useState({
+    status: false,
+    errorMessage: "errorMessage state",
+  });
+  // success message
+  const [successMessage, setSuccessMessage] = useState({
+    status: false,
+    successMessage: "successMessage state",
+  });
+  // login form input state
+  const [loginInputState, SetLoginInputState] = useState({
     email: "",
     password: "",
   });
@@ -42,23 +55,36 @@ const NavComponent = () => {
         body: JSON.stringify(FormData),
       }
     );
-    const content = await rawResponse.json();
 
+    const content = await rawResponse.json();
+    setLoadingState(false);
     console.log(content);
+    console.log(rawResponse.ok);
+    if (rawResponse.ok === true) {
+      // setErrorMessage()
+      setErrorMessage({ status: false, errorMessage: "" });
+      setSuccessMessage({ status: true, successMessage: "Loged in" });
+    } else {
+      setSuccessMessage({ status: false, successMessage: "" });
+      setErrorMessage({ status: true, errorMessage: "Error Loging in" });
+    }
   };
 
   const handleLoginSubmitClick = (e) => {
     e.preventDefault();
-    sendLoginDetailsToServer(loginState);
-    SetLoginState({
+    setLoadingState(true);
+    sendLoginDetailsToServer(loginInputState);
+    SetLoginInputState({
       email: "",
       password: "",
     });
+    setErrorMessage({ status: false, errorMessage: "" });
+    setSuccessMessage({ status: false, successMessage: "" });
   };
 
   const handleLoginInputChange = (e) => {
     const { id, value } = e.target;
-    SetLoginState((prevState) => ({
+    SetLoginInputState((prevState) => ({
       ...prevState,
       [id]: value,
     }));
@@ -117,12 +143,27 @@ const NavComponent = () => {
                       <i class="bi bi-person-circle"></i>
                     </div>
                     <form action="" onSubmit={handleLoginSubmitClick}>
+                      {errorMessage.status ? (
+                        <div className="alert alert-danger">
+                          {errorMessage.errorMessage}
+                        </div>
+                      ) : (
+                        ""
+                      )}
+                      {successMessage.status ? (
+                        <div className="alert alert-success">
+                          {successMessage.successMessage}
+                        </div>
+                      ) : (
+                        ""
+                      )}
+
                       <div className="input-div">
                         <span>Email:</span>
                         <input
                           type="email"
                           placeholder="you@email.com"
-                          value={loginState.email}
+                          value={loginInputState.email}
                           id="email"
                           onChange={handleLoginInputChange}
                         />
@@ -132,7 +173,7 @@ const NavComponent = () => {
                         <input
                           type="password"
                           placeholder="**********"
-                          value={loginState.password}
+                          value={loginInputState.password}
                           id="password"
                           onChange={handleLoginInputChange}
                         />
@@ -147,7 +188,22 @@ const NavComponent = () => {
                         </div>
                       </div>
                       <div className="input-div">
-                        <input type="submit" value="Submit" />
+                        {loadingState ? (
+                          <button
+                            type="submit"
+                            className="btn btn-primary w-100"
+                            disabled
+                          >
+                            "Proccessing Login"
+                          </button>
+                        ) : (
+                          <button
+                            type="submit"
+                            className="btn btn-primary w-100"
+                          >
+                            Submit
+                          </button>
+                        )}
                       </div>
                       <div className="or-diver d-flex justify-content-around mt-3">
                         <hr />

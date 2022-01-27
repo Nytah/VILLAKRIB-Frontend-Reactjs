@@ -1,43 +1,39 @@
-import React from 'react';
+import React from "react";
 import "./agentCard.style.css";
-import vector from "../../assets/images/Vector.png";
-import envelope from "../../assets/images/envelope.png";
-import phone from "../../assets/images/phone.png";
 import SocialIcon from "../socialIcon/socialIcon";
 import background from "../../assets/images/agentsBackground.png";
 
-
-const AgentCard = ({name, location, image}) => {
-  return ( 
+const AgentCard = ({ name, location, image }) => {
+  return (
     <div className="agentCardBox">
-      <div className="featuredAgentbackground">
+      <div className="agentCardTopImage">
         <img src={background} alt="featured Agent" />
       </div>
-      <div className="lowerCardBox">
-        <div className="picName">
-          <img src={image} alt="" />
-          <p>{name}</p>
+      <div className="d-flex col-div mt-3">
+        <div className="d-flex mx-auto">
+          <img src={image} alt="" className="profile-image" />
+          <p className="my-auto mx-2">
+            {name}
+            <p className="my-auto mx-2 col-location-div">
+              <i className="bi bi-geo-alt-fill"></i>
+              {location}
+            </p>
+          </p>
         </div>
-        <div className="locationDetails">
-          <div className="img">
-            <img src={vector} alt="" />
-          </div>
-          <div className="para">
-            <p>{location}</p>
-          </div>
-        </div>
-        
-        <div className="socialDetails">
-          <SocialIcon iconClass="icon-blue" />
-        </div>
-        <div className="contactDetails">
-          <div className="emailInfo">
-            <img src={envelope} alt="" />
-            <p>Message</p>
-          </div>
-          <div className="phoneNum">
-            <img src={phone} alt="" />
-          </div>
+      </div>
+      <div className="d-flex col-div mt-3 col-icon-div">
+        <SocialIcon iconClass="icon-blue" />
+      </div>
+      <div className="d-flex col-div mt-3">
+        <div className="d-flex mx-auto">
+          <button className="btn btn-primary m-3 fancy-button l">
+            <i className="bi bi-envelope-fill"></i>
+            <p className="my-auto">Message</p>
+          </button>
+          <button className="btn btn-primary m-3 fancy-button r">
+            <i className="bi bi-telephone-fill"></i>
+            <p className="my-auto">Call</p>
+          </button>
         </div>
       </div>
     </div>
