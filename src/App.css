@@ -18,6 +18,7 @@
   --fade-blue: rgba(38, 82, 159, 0.5);
   --main-blue: #164697;
   --text-blue: #164697;
+  --fade-black: rgba(0, 0, 0, 0.5);
   --text-dark: rgb(10, 0, 33);
   --linear-gradient: linear-gradient(
     180deg,

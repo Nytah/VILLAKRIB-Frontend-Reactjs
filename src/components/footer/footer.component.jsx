@@ -102,26 +102,28 @@ const FooterComponent = () => {
                   </ul>
                 </div>
               </div>
-            </Col>
-            <Col className="col-md-4 footerContainer-p">
-              {/* <div className="thirdSection"> */}
-              <h2 className="contactHeading">Subscribe</h2>
-              <p className="footerLogoText">
-                Receive updates, hot deals, tutorials, discounts sent straight
-                to your inbox every month
-              </p>
-              <div className="flex-row">
-                <input
-                  type="email"
-                  placeholder="Email"
-                  className="py-1 subscribe-email"
-                />
-                <input
-                  type="button"
-                  value="Subscribe"
-                  className="btn btn-danger ml-4 py-2"
-                />
-                {/* </div> */}
+            </div>
+          </Col>
+          <Col className="col-md-4 footerContainer-p">
+              <div className="thirdSection">
+                <h2 className="contactHeading">Subscribe</h2>
+                <p className="footerLogoText">
+                  Receive updates, hot deals, tutorials, discounts sent straight
+                  to your inbox every month
+                </p>
+                <div className="flex-row">
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    className="py-1 subscribe-email"
+                  />
+                  <input
+                    type="button"
+                    value="Subscribe"
+                    className="btn btn-danger ml-4 py-2"
+                  />
+                </div>
+
               </div>
             </Col>
           </Row>

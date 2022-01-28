@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./homepage.css";
 import houseImage from "../../assets/images/slide1.jpg";
 import heroImage from "../../assets/images/slide3.jpg";
+import heroBackground from "../../assets/images/Hero-Image.png";
 import { PropertyListings } from "../../components/carousel/carousel.component";
 import NavComponent from "../../components/nav/nav.component";
 import playstore from "../../assets/images/playstore.png";
@@ -26,24 +27,24 @@ const HomePage = () => {
       {/*<ReactCarousel /> */}
       <section className="hero-section">
         <div className="hearo-div">
-          <img src={heroImage} className="w-100" alt="" />
+          <img src={heroBackground} className="w-100" alt="" />
           <div className="hero-text-over-image">
             Easy Buy, Easy Life
             <p>Down to dusk, home is best</p>
+            <h1> Search Your Next Home</h1>
           </div>
         </div>
         {/* new search section
         responsive with bootstrap grid system
-        */}
+        */} 
         <section className="search-section">
-          <h1 className="text-center text-white">Search Your Next Home</h1>
           <div className="container">
             <div className="row">
               <div className="col-12 col-md-12 filter-div">
-                <div className="d-felx justifiy-content-around">
-                  <button className="btn-primary btn">Buy</button>
-                  <button className="btn-primary btn">Sell</button>
-                  <button className="btn-primary btn">Rent</button>
+                <div className="d-felx justifiy-content-around buttonContainer">
+                  <button className="button">Buy</button>
+                  <button className="button">Sell</button>
+                  <button className="button">Rent</button>
                 </div>
               </div>
             </div>
@@ -51,46 +52,35 @@ const HomePage = () => {
               <div className="col-md-4 col-sm-4">
                 <input
                   type="text"
-                  className="form-control"
+                  className="form-control inputBox"
                   placeholder="Location of Search..."
                 />
               </div>
               <div className="col-md-2 col-sm-2">
-                <select className="form-select">
-                  <option value="" disabled selected hidden>
-                    Type
-                  </option>
-
-                  {type.map((type, index) => {
-                    return <option key={index}>{type.lable}</option>;
-                    // console.log(type.label);
-                  })}
-                </select>
+                <input
+                  type="text"
+                  className="form-control inputBox"
+                  placeholder="Type: eg Land,flat"
+                />
               </div>
               <div className="col-md-2 col-sm-2">
-                <select className="form-select">
-                  <option value="" disabled selected hidden>
-                    Min Price
-                  </option>
-                  {minPrices.map((price, index) => {
-                    return <option key={index}>{price}</option>;
-                  })}
-                </select>
+                <input
+                  type="text"
+                  className="form-control inputBox"
+                  placeholder="Max price"
+                />
               </div>
               <div className="col-md-2 col-sm-2">
-                <select className="form-select">
-                  <option value="" disabled selected hidden>
-                    Max Price
-                  </option>
-                  {maxPrices.map((price, index) => {
-                    return <option key={index}>{price}</option>;
-                  })}
-                </select>
+                <input
+                  type="text"
+                  className="form-control inputBox"
+                  placeholder="Min price"
+                />
               </div>
-              <div className="col-md-2 col-sm-2 ">
-                <button className="btn btn-primary fancy-button r">
+              <div className="col-md-2 col-sm-2  searchBox">
+                <button className="searchButton">
                   {" "}
-                  Search...
+                  Search
                 </button>
               </div>
               {/* <div className="col-md-3">hi</div> */}
