@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./homepage.css";
+import houseImg from "../../assets/images/second.png";
 import houseImage from "../../assets/images/slide1.jpg";
 import heroImage from "../../assets/images/slide3.jpg";
 import heroBackground from "../../assets/images/Hero-Image.png";
@@ -94,7 +95,7 @@ const HomePage = () => {
         <div className="row image-row-house">
           <div className="col-md-6 image-col-house">
             <div className="right-image-house">
-              <img src={houseImage} alt="" />
+              <img src={houseImg} alt="" />
             </div>
           </div>
           <div className="col-md-6  d-flex text-col-house">
@@ -174,7 +175,7 @@ const HomePage = () => {
         </div>
       </section>
       <div className="footerComponent">
-        <FooterComponent />
+        {/* <FooterComponent /> */}
       </div>
     </>
   );

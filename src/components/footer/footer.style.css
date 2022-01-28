@@ -101,7 +101,7 @@ ul {
   margin-right: 8px;
 }
 
-.inputContactEmail input[type='button'] {
+.inputContactEmail input[type="button"] {
   color: white;
   /* font-family: Istok Web; */
   font-style: normal;
@@ -164,7 +164,7 @@ ul {
   border-left: 1px solid white;
   padding-left: 20px;
   height: 320px;
-
+}
 /* .thirdPart {
   /* border-right: 1px solid white; * /
 } */
