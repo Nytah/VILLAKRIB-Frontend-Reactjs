@@ -2,6 +2,12 @@ import image1 from "../../assets/images/slide1.jpg";
 import image2 from "../../assets/images/slide2.jpg";
 import image3 from "../../assets/images/slide3.jpg";
 import image4 from "../../assets/images/1.jpeg";
+import explore1 from "../images/explore1.png";
+import explore2 from "../images/explore2.png";
+import explore3 from "../images/explore3.png";
+import explore4 from "../images/explore4.png";
+import explore5 from "../images/explore5.png";
+import explore6 from "../images/explore6.png";
 import Agent01 from "../images/Agent01.png";
 import Agent02 from "../images/Agent02.png";
 import Agent03 from "../images/Agent03.png";
@@ -42,37 +48,37 @@ export const CarouselImages = [
 // this datas feeds the carousel on the hero section
 export const PropertyListingsImage = [
     {
-        url: image3,
+        url: explore1,
         textHeader: 'lorem Header 11',
     },
     {
-        url: image2,
+        url: explore2,
         textHeader: 'lorem Header 22',
     },
     {
-        url: image1,
+        url: explore3,
         textHeader: 'lorem Header 33',
     },
     {
-        url: image4,
+        url: explore4,
         textHeader: 'lorem Header 44',
     },
     {
-        url: image3,
+        url: explore5,
         textHeader: 'lorem Header 11',
     },
     {
-        url: image2,
+        url: explore6,
         textHeader: 'lorem Header 22',
     },
-    {
-        url: image1,
-        textHeader: 'lorem Header 33',
-    },
-    {
-        url: image4,
-        textHeader: 'lorem Header 44',
-    },
+    // {
+    //     url: image1,
+    //     textHeader: 'lorem Header 33',
+    // },
+    // {
+    //     url: image4,
+    //     textHeader: 'lorem Header 44',
+    // },
 ]
 
 // This data is for the featured agents section
