@@ -20,6 +20,7 @@
   --text-blue: #164697;
   --fade-black: rgba(0, 0, 0, 0.5);
   --text-dark: rgb(10, 0, 33);
+  --text-black: #000000;
   --linear-gradient: linear-gradient(
     180deg,
     rgba(22, 70, 151, 1) 17%,

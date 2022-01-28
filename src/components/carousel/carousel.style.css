@@ -126,6 +126,16 @@
   right: 10px;
   /* position: absolute; */
 }
+
+.slideHeader {
+  color: var(--text-black);
+  font-family: Istok Web;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 142.19%;
+}
+
 .property-listing-slide .slide-icons i {
   font-size: 25px;
   margin: 0 10px;
