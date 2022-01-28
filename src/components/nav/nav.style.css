@@ -103,9 +103,9 @@
   display: none;
 }
 @media screen and (max-width: 878px) {
-  #nav {
+  /* #nav {
     border: solid;
-  }
+  } */
   #nav .logo-div {
     margin: auto 10px;
     margin-right: auto;

@@ -42,6 +42,11 @@ const NavComponent = () => {
     password: "",
   });
 
+  // // register form input state
+  // const [regesterInputState, SetRegesterInputState] = useState({
+  //   email: "",
+  //   password: "",
+  // });
   const sendLoginDetailsToServer = async (FormData) => {
     console.log("send to API-->", FormData);
     const rawResponse = await fetch(

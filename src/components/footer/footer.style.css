@@ -4,11 +4,11 @@
   margin: 0 !important;
   color: white;
   font-size: 20px;
-  padding: 0px 40px;
+  padding: 0px 5px;
 }
 
 .footerContainer-p {
-  padding: 50px 30px;
+  padding: 10px 10px;
 }
 
 .logoImageBorder {
@@ -16,7 +16,7 @@
   width: 130px;
 }
 .footerLogoText {
-  font-family: Istok Web;
+  /* font-family: Istok Web;/ */
   font-style: normal;
   font-size: 20px;
 }
@@ -33,7 +33,7 @@
 .footerSocialContact {
   display: flex;
   flex-direction: row;
-  margin: 10px 25px;
+  /* margin: 10px 25px; */
   justify-content: space-between;
   cursor: pointer;
 }
@@ -101,9 +101,9 @@ ul {
   margin-right: 8px;
 }
 
-.inputContactEmail input[type="button"] {
+.inputContactEmail input[type='button'] {
   color: white;
-  font-family: Istok Web;
+  /* font-family: Istok Web; */
   font-style: normal;
   background-color: #dc3545;
   font-weight: bold;
@@ -115,8 +115,9 @@ ul {
   border-top: 1px solid rgb(214, 211, 205);
   width: 100%;
   font-weight: bolder;
-  font-size: 22px;
+  font-size: 14px;
   background-color: var(--main-blue);
+  padding-top: 10px;
 }
 
 .footerBottomText {
@@ -127,7 +128,7 @@ ul {
 
 .col-md-4 > .flex-row > .btn {
   border-radius: 0px 18px 0px 0px;
-  font-family: Istok Web;
+  /* font-family: Istok Web; */
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -139,17 +140,19 @@ ul {
   background: #ffffff;
   border-radius: 2px;
   padding: 10px;
+  border: none;
 }
 
 /* .thirdSection {
   border-left: 1px solid white;
-  height: 300px;
-  padding-left: 20px;
+  height: 300px; 
+  padding-left: 20px; 
 } */
 
 .secondPart {
-  border-left: 1px solid white;
-  padding-left: 20px;
+  /* border-left: 1px solid white; */
+  padding-left: 5px;
+  padding-top: 20px;
 }
 
 .thirdPart {
@@ -161,4 +164,15 @@ ul {
   border-left: 1px solid white;
   padding-left: 20px;
   height: 320px;
+
+/* .thirdPart {
+  /* border-right: 1px solid white; * /
+} */
+.footerContainer-p .secondPart a,
+.footerContainer-p .thirdPart a {
+  color: rgb(187, 255, 255);
+}
+.footerContainer-p .secondPart a:focus,
+.footerContainer-p .thirdPart a:focus {
+  color: rgb(0, 255, 255);
 }
