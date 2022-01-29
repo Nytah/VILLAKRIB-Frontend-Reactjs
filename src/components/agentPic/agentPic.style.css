@@ -4,6 +4,8 @@
   justify-content: center;
   /* border: solid red; */
   /* width: 100px; */
+  padding: 40px 0;
+  margin: 0px;
 }
 
 .agentPic > img {
@@ -14,7 +16,7 @@
   cursor: pointer;
   /* width: 100px; */
   /* border: solid; */
-  border: solid var(--main-blue);
+  border: none;
   border-radius: 50%;
   width: 150px;
 }

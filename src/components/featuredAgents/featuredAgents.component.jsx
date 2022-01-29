@@ -63,7 +63,7 @@ const FeaturedAgents = () => {
         >
           <AgentPic image={agentData.agent4.image} />
         </div>
-        <div
+        {/* <div
           onClick={() => {
             handleName(agentData.agent5);
             handleActive();
@@ -134,7 +134,7 @@ const FeaturedAgents = () => {
           }}
         >
           <AgentPic image={agentData.agent13.image} />
-        </div>
+        </div> */}
       </div>
       {active && (
         <div className="agentCard">

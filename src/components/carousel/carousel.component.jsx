@@ -136,7 +136,7 @@ export const PropertyListings = () => {
     <>
       <div className="property-listing-slide ">
         <div className="slide-icons w-100 d-flex justify-content-between">
-          <h4 style={{ marginLeft: "50px" }}>Explore property listings</h4>
+          <h4 className="slideHeader" style={{ marginLeft: "50px" }}>Explore property listings</h4>
           <div>
             {" "}
             <i
